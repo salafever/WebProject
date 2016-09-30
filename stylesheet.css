@@ -1,0 +1,139 @@
+#theInput {
+    width = 500px;
+    
+}
+
+#header{
+    /* font-size: 90px; */
+    /* color: #2192d8; */
+    background-color: #c994c9;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: -20px;
+    margin-left: -10px;
+    padding-right: 20px;
+}
+
+#welcomeNote {
+    position: absolute;
+    bottom: 8px;
+    right: 190px;
+    /* right: 100px; */
+    font-size: 18px;
+   
+}
+
+#accountPage {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#infoDiv {
+    background-color: #f2c6f2;
+    height: 150px;
+    width: 500px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#infoParagraph {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+#bodyDiv {
+    height: 1500px;
+    width: 1500px;
+    position: relative;
+    
+}
+
+#nameOfPage {
+    position: absolute;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.theInput {
+    width: 300px;
+}
+
+.textProp {
+    color: #8533ff;
+    display: inline-block;
+}
+
+#textName {
+    position: relative;
+    margin-top: 40px;
+    display: block;
+}
+
+#textAddress {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#question {
+    color: #8533ff;
+    position: relative;
+    margin-top: 20px;
+}
+
+#textMaj {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#textMin {
+    position: relative;
+    margin-top: 20px;
+    /* margin-left: 500px; */
+    display: block;
+}
+
+#divMinMaj {
+    position: relative;
+    display: block;
+}
+
+#textGradDate {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#disclaim {
+    position: relative;
+    color: #8533ff;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#disclaimPara {
+    position: relative;
+    color: #8533ff;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* a:link { */
+/*     text-decoration: none; */
+/*     color: #009933; */
+/* } */
+
+/* a:hover { */
+/*     color: #1aff66; */
+/* } */
+
+/* a:visited { */
+/*     color:#003311; */
+/* } */
+
