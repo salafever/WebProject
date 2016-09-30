@@ -1,0 +1,28 @@
+/* Author: Kimi Halverson */
+
+.loginFields{
+    width: 40px;
+    font-size: 8px;
+    padding: 0px;
+}
+
+#USER{
+    border: 1px solid red;
+    float: left;
+    width: 60px;
+}
+
+#PASS{
+    border: 1px solid red;
+    float: right;
+    width: 60px;
+}
+
+#userLogin {
+    border: 2px solid #420859;
+    height: 80px;
+    width: 130px;
+    float: right;
+    margin-top: 10px;
+    font-size: 9px;
+}

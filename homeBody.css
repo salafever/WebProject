@@ -1,0 +1,85 @@
+body{
+    background-image: url("background.jpg");
+}
+
+#Map{
+    height: 600px;
+    width: 600px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#theMap{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+#theLogo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#header{
+    background-color: #c994c9;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: -9px;
+    margin-left: -10px;
+    padding-right: 20px;
+}
+
+#welcomeNote {
+    position: absolute;
+    bottom: 8px;
+    right: 190px;
+    font-size: 18px;
+   
+}
+
+#infoDiv {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #f2c6f2;
+    height: 150px;
+    width: 500px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#infoParagraph {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+
+/* CSS for the list of people on the admin page */
+
+#personList{
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #f2c6f2;
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.nameList{
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+    display: inline-block;
+    padding: 6px;
+}
