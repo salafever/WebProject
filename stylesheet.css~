@@ -42,8 +42,7 @@
 }
 
 #infoParagraph {
-    padding-top: 15px;
-    padding-left: 5px;
+    
 }
 
 #bodyDiv {
@@ -136,5 +135,4 @@
 /* a:visited { */
 /*     color:#003311; */
 /* } */
->>>>>>> ae6f5b838dbee312a82f9534e4acff48758513e8
 
