@@ -2,18 +2,16 @@
 
 .loginFields{
     width: 40px;
-    font-size: 8px;
+    font-size: 12px;
     padding: 0px;
 }
 
 #USER{
-    border: 1px solid red;
     float: left;
     width: 60px;
 }
 
 #PASS{
-    border: 1px solid red;
     float: right;
     width: 60px;
 }
@@ -24,5 +22,5 @@
     width: 130px;
     float: right;
     margin-top: 10px;
-    font-size: 9px;
+    font-size: 12px;
 }
