@@ -28,6 +28,11 @@ body{
    
 }
 
+
+#returnToPage{
+    float: right;
+}
+
 #accountPage {
     position: absolute;
     bottom: 8px;
