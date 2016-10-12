@@ -66,6 +66,15 @@ body{
 }
 
 
+.theInput {
+    width: 100px;
+}
+
+.textProp {
+    color: white;
+    display: inline-block;
+}
+
 /* CSS for the list of people on the admin page */
 
 #personList{
