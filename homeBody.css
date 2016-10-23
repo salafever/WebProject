@@ -1,5 +1,6 @@
 body{
     background-color: #333132;
+
 }
 
 #Map{
@@ -80,17 +81,16 @@ body{
 #personList{
     max-height: 100%;
     max-width: 100%;
-    background-color: #f2c6f2;
+    background-color: #70132d;
     height: 200px;
-    width: 600px;
+    width: 1000px;
     margin: auto;
     margin-top: 10px;
 }
 
 .nameList{
-    height: 100px;
-    width: 100px;
-    border: solid 1px black;
+    max-height: 100%;
+    width: 140px;
     display: inline-block;
     padding: 6px;
 }
