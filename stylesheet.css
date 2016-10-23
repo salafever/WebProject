@@ -8,8 +8,6 @@ body{
 }
 
 #header{
-    /* font-size: 90px; */
-    /* color: #2192d8; */
     background-color: #c994c9;
     position: relative;
     width: 100%;
@@ -23,11 +21,8 @@ body{
     position: absolute;
     bottom: 8px;
     right: 190px;
-    /* right: 100px; */
     font-size: 18px;
-   
 }
-
 
 #returnToPage{
     float: right;
@@ -83,7 +78,8 @@ body{
     display: block;
 }
 
-#textAddress {
+/* Text box class for Address, Password, Email, and Grad Date */
+.textBox {
     position: relative;
     margin-top: 20px;
     display: block;
@@ -104,7 +100,6 @@ body{
 #textMin {
     position: relative;
     margin-top: 20px;
-    /* margin-left: 500px; */
     display: block;
     display: float;
 }
@@ -114,45 +109,10 @@ body{
     display: block;
 }
 
-#textGradDate {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-}
-
 #submitButton {
     position: relative;
     margin-top: 20px;
     margin-left: 190px;
-    display: block;
-}
-
-/* a:link { */
-/*     text-decoration: none; */
-/*     color: #009933; */
-/* } */
-
-/* a:hover { */
-/*     color: #1aff66; */
-/* } */
-
-/* a:visited { */
-/*     color:#003311; */
-/* } */
->>>>>>> ae6f5b838dbee312a82f9534e4acff48758513e8
-
-
-/* -------------------------------------------------------------------------- */
-
-#textEmail {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-}
-
-#textPassword {
-    position: relative;
-    margin-top: 20px;
     display: block;
 }
 
