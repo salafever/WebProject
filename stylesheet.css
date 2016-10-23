@@ -1,3 +1,7 @@
+body{
+    background-image: url("background.jpg");
+}
+
 #theInput {
     width = 500px;
     
@@ -22,6 +26,11 @@
     /* right: 100px; */
     font-size: 18px;
    
+}
+
+
+#returnToPage{
+    float: right;
 }
 
 #accountPage {
@@ -130,6 +139,7 @@
 /* a:visited { */
 /*     color:#003311; */
 /* } */
+>>>>>>> ae6f5b838dbee312a82f9534e4acff48758513e8
 
 
 /* -------------------------------------------------------------------------- */

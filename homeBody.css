@@ -1,10 +1,20 @@
 body{
+<<<<<<< HEAD
     background-image: url("background.jpg");
 }
 
 #Map{
     height: 600px;
     width: 600px;
+=======
+    background-color: #333132;
+
+}
+
+#Map{
+    height: 550px;
+    width: 800px;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     max-height: 100%;
     max-width: 100%;
     margin: auto;
@@ -12,9 +22,15 @@ body{
 }
 
 #theMap{
+<<<<<<< HEAD
     max-width: 100%;
     max-height: 100%;
 }
+=======
+    width: 100%;
+    height: 100%;
+ }
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
 
 #logo{
     height: 100px;
@@ -29,11 +45,19 @@ body{
 
 
 #header{
+<<<<<<< HEAD
     background-color: #c994c9;
     position: relative;
     width: 100%;
     height: 100px;
     margin-top: -9px;
+=======
+    background-color: #70132d;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    /* margin-top: -9px; */
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     margin-left: -10px;
     padding-right: 20px;
 }
@@ -41,21 +65,36 @@ body{
 #welcomeNote {
     position: absolute;
     bottom: 8px;
+<<<<<<< HEAD
     right: 190px;
     font-size: 18px;
    
+=======
+    right: 250px;
+    font-size: 18px;
+    color: white;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
 }
 
 #infoDiv {
     max-height: 100%;
     max-width: 100%;
+<<<<<<< HEAD
     background-color: #f2c6f2;
+=======
+    background-color: #8F8F8F;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     height: 150px;
     width: 500px;
     margin-top: 10px;
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
+<<<<<<< HEAD
+=======
+
+    font-family: Libre Baskerville, serif;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
 }
 
 #infoParagraph {
@@ -64,22 +103,45 @@ body{
 }
 
 
+<<<<<<< HEAD
+=======
+.theInput {
+    width: 100px;
+}
+
+.textProp {
+    color: white;
+    display: inline-block;
+}
+
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
 /* CSS for the list of people on the admin page */
 
 #personList{
     max-height: 100%;
     max-width: 100%;
+<<<<<<< HEAD
     background-color: #f2c6f2;
     height: 200px;
     width: 600px;
+=======
+    background-color: #70132d;
+    height: 200px;
+    width: 1000px;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     margin: auto;
     margin-top: 10px;
 }
 
 .nameList{
+<<<<<<< HEAD
     height: 100px;
     width: 100px;
     border: solid 1px black;
+=======
+    max-height: 100%;
+    width: 140px;
+>>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     display: inline-block;
     padding: 6px;
 }
