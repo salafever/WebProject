@@ -1,0 +1,122 @@
+// converting to JSON
+
+var init = function() {
+    var anArray = ([1, 2], [3, 4]);
+    console.log(JSON.stringify(anArray);
+    // can do this with any type of object
+
+    var anObject = {anArray: [1,2,3], aNumber: 2, aString: 'text'};
+    console.log(JSON.stringify(anArray));
+    // Must have double quotes for each type and single quotes for the entire
+    var aString = '{"anArray": [1,2,3], "aNumber": 2, "aString": 'text'}';
+    var anotherObject = JSON.parse(aString);
+    console.log(anotherObject.anArray);
+}
+
+var init = function() {
+    var anArray = ([1, 2], [3, 4]);
+    console.log(JSON.stringify(anArray);
+    // can do this with any type of object
+
+    var anObject = {anArray: [1,2,3], aNumber: 2, aString: 'text'};
+    console.log(JSON.stringify(anArray));
+    // Must have double quotes for each type and single quotes for the entire
+    var aString = '{"anArray": [1,2,3], "aNumber": 2, "aString": 'text'}';
+    var anotherObject = JSON.parse(aString);
+    console.log(anotherObject.anArray);
+}
+
+--------------------------------------------------------------------------------
+
+//JSON FILE
+{"anArray": [1,2,3], "aNumber": 2, "aString": 'even more text'}
+
+
+//JS FILE
+var httpRequest;
+
+var handleResponse = function() {
+    if ((httpRequest.readState === XMLHttpRequest.DONE) &&
+    (httpRequest.status === 200)) {
+
+    // This will give you the data given
+    //console.log(httpRequest.responseText);
+    
+    uselessObject = JSON.parse(httpRequest.responseText)
+    var theDiv = document.getElementById('thDiv')
+    var textNode = document.creatTextNode(uselessObject.aString);
+
+    // This tells you that you are ready when clicked.
+    // console.log('I am ready');
+    }
+}
+
+var buttonClicked = function () {
+    console.log('button clicked')
+    httpRequest.send();
+}
+
+var init = function () {
+    var theButton = document.getElementById('theButton');
+    theButton.addEventListener('click', buttonClicked)
+
+    httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = handleResponse;
+    httpRequest.open('GET', "https://cs.roanoke.edu/~bouchard/useless.json",
+    true);
+    
+}
+
+
+//Run automatically
+
+
+//JSON FILE
+{"anArray": [1,2,3], "aNumber": 2, "aString": 'ahhhhhhhhhh'}
+
+
+//JS FILE
+var httpRequest;
+
+var handleResponse = function() {
+    if ((httpRequest.readState === XMLHttpRequest.DONE) &&
+    (httpRequest.status === 200)) {
+
+    // This will give you the data given
+    //console.log(httpRequest.responseText);
+    
+    uselssObject = JSON.parse(httpRequest.responseText)
+    var theDiv = document.getElementById('thDiv')
+    var children = theDiv.childNodes;
+    for(var i = 0; i < children.length; i++) {
+    	    theDiv.removeChild(children[i]);
+    }
+    var textNode = document.creatTextNode(uselessObject.aString);
+
+    // This tells you that you are ready when clicked.
+    // console.log('I am ready');
+    }
+}
+
+var buttonClicked = function () {
+    console.log('button clicked')
+    
+
+var update = function() {
+    //console.log('I am updating')
+    var time = new Date().getTime();
+    var url = "https://cs.roanoke.edu/~bouchard/useless.json"
+    httpRequest.open('GET', url + '?' + time, true);
+
+}
+
+var init = function () {
+    var theButton = document.getElementById('theButton');
+    theButton.addEventListener('click', buttonClicked)
+
+    httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = handleResponse;
+    
+    window.setInterval(update, 1000); 
+    
+}
