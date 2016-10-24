@@ -112,5 +112,6 @@ body{
     width: 140px;
     display: inline-block;
     padding: 6px;
+    color: white;
     /* position: static; */
 }
