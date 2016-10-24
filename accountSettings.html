@@ -2,23 +2,15 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
-    <link type="text/css" rel="stylesheet" href="homeBody.css" />
-    <link type="text/css" rel="stylesheet" href="mainLogin.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">    
-
     <title>Account Settings</title>
   </head>
   <body>
 
     <!-- Header tab -->
     <div id="header">
-      
       <p id="welcomeNote">Welcome!</p>
       <p id="accountPage">Account Settings</p>
       <h1 id="nameOfPage">Account Settings<h1>
-      <button id="returnToPage" type="button" onclick="toLoggedIn()">Return to page</button>
-      
     </div>
 
     <!-- Info Paragraph for User to see -->
@@ -35,7 +27,7 @@
       </div>
 
       <!-- User Inputs Address -->
-      <div class="textBox">
+      <div id="textAddress">
 	<p class="textProp">Street Address 1: </p>
 	<input class="theInput" type="text"></input>
 	<p></p>
@@ -80,7 +72,7 @@
       </div>
 
       <!--User inputs Grad Date -->
-      <div class="textBox">
+      <div id="textGradDate">
 	<p class="textProp">Graduation Date (Mon/Year): </p>
 	<input type="text"></input>
 	<input type="text"></input>
@@ -92,5 +84,4 @@
     </div>
 
   </body>
-  <script src="buttons.js"></script>
 </html>

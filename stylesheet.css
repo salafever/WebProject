@@ -1,7 +1,3 @@
-body{
-    background-image: url("background.jpg");
-}
-
 #theInput {
     width = 500px;
     
@@ -28,11 +24,6 @@ body{
    
 }
 
-
-#returnToPage{
-    float: right;
-}
-
 #accountPage {
     position: absolute;
     bottom: 8px;
@@ -56,8 +47,8 @@ body{
 }
 
 #bodyDiv {
-    height: 1500px;
-    width: 1500px;
+    height: 1000px;
+    width: 1000px;
     position: relative;
     
 }
@@ -98,7 +89,7 @@ body{
 #textMaj {
     position: relative;
     margin-top: 20px;
-    display: block;
+    display: float;
 }
 
 #textMin {
@@ -106,6 +97,7 @@ body{
     margin-top: 20px;
     /* margin-left: 500px; */
     display: block;
+    display: float;
 }
 
 #divMinMaj {
@@ -114,6 +106,41 @@ body{
 }
 
 #textGradDate {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#submitButton {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 190px;
+    display: block;
+}
+
+/* a:link { */
+/*     text-decoration: none; */
+/*     color: #009933; */
+/* } */
+
+/* a:hover { */
+/*     color: #1aff66; */
+/* } */
+
+/* a:visited { */
+/*     color:#003311; */
+/* } */
+
+
+/* -------------------------------------------------------------------------- */
+
+#textEmail {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#textPassword {
     position: relative;
     margin-top: 20px;
     display: block;
@@ -133,17 +160,9 @@ body{
     margin-left: 30px;
 }
 
-/* a:link { */
-/*     text-decoration: none; */
-/*     color: #009933; */
-/* } */
-
-/* a:hover { */
-/*     color: #1aff66; */
-/* } */
-
-/* a:visited { */
-/*     color:#003311; */
-/* } */
->>>>>>> ae6f5b838dbee312a82f9534e4acff48758513e8
+#checkbox {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 500px;
+}
 
