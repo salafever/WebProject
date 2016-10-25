@@ -1,36 +1,24 @@
-body{
-    background-image: url("background.jpg");
-}
-
 #theInput {
-    width = 500px;
-    
+    width = 500px;    
 }
 
 #header{
-    /* font-size: 90px; */
-    /* color: #2192d8; */
-    background-color: #c994c9;
+    background-color: #70132d;
     position: relative;
     width: 100%;
     height: 100px;
     margin-top: -20px;
     margin-left: -10px;
     padding-right: 20px;
+    color: white;
 }
 
 #welcomeNote {
     position: absolute;
     bottom: 8px;
     right: 190px;
-    /* right: 100px; */
     font-size: 18px;
-   
-}
-
-
-#returnToPage{
-    float: right;
+    color: white;
 }
 
 #accountPage {
@@ -38,16 +26,18 @@ body{
     bottom: 8px;
     right: 16px;
     font-size: 18px;
+    color: white;
 }
 
 #infoDiv {
-    background-color: #f2c6f2;
+    background-color: #8F8F8F;
     height: 150px;
     width: 500px;
     margin-top: 10px;
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: Libre Baskerville, serif;
 }
 
 #infoParagraph {
@@ -56,8 +46,8 @@ body{
 }
 
 #bodyDiv {
-    height: 1500px;
-    width: 1500px;
+    height: 1000px;
+    width: 1000px;
     position: relative;
     
 }
@@ -73,7 +63,7 @@ body{
 }
 
 .textProp {
-    color: #8533ff;
+    color: black;
     display: inline-block;
 }
 
@@ -90,7 +80,7 @@ body{
 }
 
 #question {
-    color: #8533ff;
+    color: black;
     position: relative;
     margin-top: 20px;
 }
@@ -98,14 +88,14 @@ body{
 #textMaj {
     position: relative;
     margin-top: 20px;
-    display: block;
+    display: float;
 }
 
 #textMin {
     position: relative;
     margin-top: 20px;
-    /* margin-left: 500px; */
     display: block;
+    display: float;
 }
 
 #divMinMaj {
@@ -119,31 +109,41 @@ body{
     display: block;
 }
 
+#submitButton {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 190px;
+    display: block;
+
+#textEmail {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
+#textPassword {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+}
+
 #disclaim {
     position: relative;
-    color: #8533ff;
+    color: black;
     margin-left: 150px;
     margin-top: 50px;
 }
 
 #disclaimPara {
     position: relative;
-    color: #8533ff;
+    color: black;
     margin-top: 50px;
     margin-left: 30px;
 }
 
-/* a:link { */
-/*     text-decoration: none; */
-/*     color: #009933; */
-/* } */
-
-/* a:hover { */
-/*     color: #1aff66; */
-/* } */
-
-/* a:visited { */
-/*     color:#003311; */
-/* } */
->>>>>>> ae6f5b838dbee312a82f9534e4acff48758513e8
+#checkbox {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 500px;
+}
 

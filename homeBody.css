@@ -1,4 +1,10 @@
 body{
+    background-image: url("background.jpg");
+}
+
+#Map{
+    height: 600px;
+    width: 600px;
     background-color: #333132;
 
 }
@@ -13,9 +19,9 @@ body{
 }
 
 #theMap{
-    width: 100%;
-    height: 100%;
- }
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #logo{
     height: 100px;
@@ -30,6 +36,11 @@ body{
 
 
 #header{
+    background-color: #c994c9;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: -9px;
     background-color: #70132d;
     position: relative;
     width: 100%;
@@ -42,6 +53,8 @@ body{
 #welcomeNote {
     position: absolute;
     bottom: 8px;
+    right: 190px;
+    font-size: 18px;
     right: 250px;
     font-size: 18px;
     color: white;
@@ -50,6 +63,7 @@ body{
 #infoDiv {
     max-height: 100%;
     max-width: 100%;
+    background-color: #f2c6f2;
     background-color: #8F8F8F;
     height: 150px;
     width: 500px;
@@ -57,7 +71,6 @@ body{
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
-
     font-family: Libre Baskerville, serif;
 }
 
@@ -81,6 +94,9 @@ body{
 #personList{
     max-height: 100%;
     max-width: 100%;
+    background-color: #f2c6f2;
+    height: 200px;
+    width: 600px;
     background-color: #70132d;
     height: 200px;
     width: 1000px;
@@ -89,8 +105,13 @@ body{
 }
 
 .nameList{
+    height: 150px;
+    /* width: 100px; */
+    border: solid 1px black;
     max-height: 100%;
     width: 140px;
     display: inline-block;
     padding: 6px;
+    color: white;
+    /* position: static; */
 }
