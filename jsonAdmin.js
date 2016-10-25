@@ -52,8 +52,13 @@ var jsonEverything = {"people": [
 //POST: A div will be populated with information on the
 //      name that was clicked on
 var displayInfo = function(event){
+    var personDiv = document.getElementById('personInfo');
+
+    
     console.log("I've been clicked!");
     console.log(event.target.textContent);
+
+    console.log(jsonEverything);
 }
 
 
