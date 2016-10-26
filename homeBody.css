@@ -1,12 +1,11 @@
 body{
-    background-image: url("background.jpg");
+    background-color: #333132;
 }
 
 #Map{
     height: 600px;
     width: 600px;
     background-color: #333132;
-
 }
 
 #Map{
