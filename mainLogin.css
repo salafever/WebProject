@@ -1,7 +1,6 @@
 /* Author: Kimi Halverson */
 
 .loginFields{
-<<<<<<< HEAD
     width: 40px;
     font-size: 12px;
     padding: 0px;
@@ -9,35 +8,29 @@
 
 #USER{
     float: left;
-=======
     width: 50px;
     font-size: 12px;
 }
 
 #USER{
->>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
     width: 60px;
 }
 
 #PASS{
-<<<<<<< HEAD
+
     float: right;
-=======
->>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
+
     width: 60px;
 }
 
 #userLogin {
-<<<<<<< HEAD
     border: 2px solid #420859;
     height: 80px;
     width: 130px;
     float: right;
     margin-top: 10px;
     font-size: 12px;
-=======
     position: relative;
-    border: 2px solid red;
     height: 160px;
     width: 200px;
     float: right;
@@ -56,5 +49,4 @@
     display: inline;
     color: white;
     font-family: Libre Baskerville, serif;
->>>>>>> 94b8777fe8fbc99715135d90fb004a490f5d6218
 }
