@@ -1,3 +1,7 @@
+body{
+    background-color: #333132;
+}
+
 #theInput {
     width = 500px;    
 }
@@ -63,7 +67,7 @@
 }
 
 .textProp {
-    color: black;
+    color: white;
     display: inline-block;
 }
 
@@ -80,7 +84,7 @@
 }
 
 #question {
-    color: black;
+    color: white;
     position: relative;
     margin-top: 20px;
 }
@@ -114,6 +118,7 @@
     margin-top: 20px;
     margin-left: 190px;
     display: block;
+}
 
 #textEmail {
     position: relative;
@@ -123,27 +128,26 @@
 
 #textPassword {
     position: relative;
-    margin-top: 20px;
     display: block;
 }
 
 #disclaim {
     position: relative;
-    color: black;
-    margin-left: 150px;
+    color: white;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
 #disclaimPara {
     position: relative;
-    color: black;
-    margin-top: 50px;
+    color: white;
+    margin-top: 30px;
     margin-left: 30px;
 }
 
 #checkbox {
     position: relative;
     margin-top: 20px;
-    margin-left: 500px;
+    margin-left: 100px;
 }
 
