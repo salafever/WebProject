@@ -38,7 +38,7 @@ var addToAdmin = function(){
 
     var JSONnames = JSON.parse(jsonNameString);
 
-    for(var i = 0; i < JSONnames.length; i++){
+    for(var i = 0; i < JSONames.length; i++){
 	var newLi = document.createElement("li");
 	var newName = document.createTextNode(JSONames[i]);
 	newLi.appendChild(newName);
