@@ -54,16 +54,10 @@ var jsonEverything = {"people": [
 var displayInfo = function(event){
     var personDiv = document.getElementById('personInfo');
 
-<<<<<<< HEAD
     // the name of the person that has been clicked
     var clickedName = event.target.textContent;
 
     console.log(jsonEverything);
-
-    
-    
-    
-=======
     
     console.log("I've been clicked!");
     console.log(event.target.textContent);
@@ -92,10 +86,6 @@ var displayInfo = function(event){
 	}
     }
 
-
-
-
->>>>>>> 69e1028929aaae1b4e2c9879b5d39f9d51a85074
 }
 
 
