@@ -1,84 +1,63 @@
-// var httpRequest;
+var jsonNameString = '["Josiah Crowley"]';
 
-<<<<<<< HEAD
-// var handleResponse = function() {
-//     if ((httpRequest.readState === XMLHttpRequest.DONE) &&
-//     (httpRequest.status === 200)) {
+var jsonEverything = {"people": [
 
-//     // This will give you the data given
-//     //console.log(httpRequest.responseText);
+    	{"name": "Josiah Crowley",
+	 "address1": "123 Waterloo Lane",
+	 "address2": "",
+	 "city": "Salem",
+	 "state": "Virginia",
+	 "zip": "24153",
+	 "ma1": "Physics",
+	 "ma2": "",
+	 "ma3": "",
+	 "mi1": "Math",
+	 "mi2": "",
+	 "mi3": "",
+	 "grad": "May 2009",
+	 "email": "jcrowley@gmail.com"}
+]}
+
+//PRE: The element was clicked on
+//POST: A div will be populated with information on the
+//      name that was clicked on
+var displayInfo = function(event){
+    var personDiv = document.getElementById('personInfo');
+
     
-=======
-//PRE:
-//POST:
-// var handleResponse = function(){
-//     if (httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status == 200){
-// 	var infoString = httpRequest.responseText;
-// 	console.log(infoString);
+    console.log(event.target.textContent);
 
-// 	var infoObject = JSON.parse(infoString);
-// 	console.log(infoObject);
-//     }
-// }
+    console.log(jsonEverything);
+}
 
 
+//PRE: Window/webpage was loaded
+//POST: Adds names to the div
+var addToAdmin = function(){
+    var classList = document.getElementById("2009");
 
-// //PRE: the id of the element clicked on
-// //POST: changes the contents of the 'personInfo' div to contain
-// //      the information about the matching name
-// var displayInfo = function(event){
-//     var name = event.target.textContent;
-//     console.log(name.innerHTML);
+    var JSONnames = JSON.parse(jsonNameString);
 
-//     httpRequest = new XMLHttpRequest();
-//     httpRequest.onreadystatechange = handleResponse;
-//     httpRequest.open('GET', 'http://cs.roanoke.edu/~kilhalverson/website/dummy.json', true);
-//     httpRequest.send();
-    
+    for(var i = 0; i < JSONnames.length; i++){
+	var newLi = document.createElement("li");
+	var newName = document.createTextNode(JSONames[i]);
+	newLi.appendChild(newName);
+	newLi.addEventListener('click', displayInfo);
+	classList.appendChild(newLi);
+    }
+}
 
-// }
 
-// var init = function(){
+//PRE: The window is loaded on the webpage
+//POST: Populates the admin page with the names
+//      of the currently registered users
+//      Also sets event listeners for each name
+//      populated to so when they are clicked on
+//      their information is displayed
+var init = function(){
+    addToAdmin();
+}
 
-// }
-// var handleResponse = function() {
-//     if ((httpRequest.readState === XMLHttpRequest.DONE) &&
-//     (httpRequest.status === 200)) {
+window.addEventListener('load', init);
 
-//     // This will give you the data given
-//     //console.log(httpRequest.responseText);
-    
->>>>>>> 45a49020fffb63d8b6c1128ed915ccdbaf886bab
-//     uselessObject = JSON.parse(httpRequest.responseText)
-//     var theDiv = document.getElementById('thDiv')
-//     var textNode = document.creatTextNode(uselessObject.aString);
-
-//     // This tells you that you are ready when clicked.
-//     // console.log('I am ready');
-//     }
-// }
-
-// var buttonClicked = function () {
-//     console.log('button clicked')
-//     httpRequest.send();
-// }
-
-// var init = function () {
-//     var theButton = document.getElementById('theButton');
-//     theButton.addEventListener('click', buttonClicked)
-
-//     httpRequest = new XMLHttpRequest();
-//     httpRequest.onreadystatechange = handleResponse;
-//     httpRequest.open('GET', "https://home/stephanie/public_html/project/dataStorage.json", true);
-    
-// }
-<<<<<<< HEAD
-
-var namespace = {};
-
-namespace.xhtml = new XMLHttpRequest();
-
-namespace.url = "adminTable.json"
-=======
->>>>>>> 45a49020fffb63d8b6c1128ed915ccdbaf886bab
 
