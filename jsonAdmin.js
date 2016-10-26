@@ -54,6 +54,7 @@ var jsonEverything = {"people": [
 var displayInfo = function(event){
     var personDiv = document.getElementById('personInfo');
 
+<<<<<<< HEAD
     // the name of the person that has been clicked
     var clickedName = event.target.textContent;
 
@@ -62,6 +63,39 @@ var displayInfo = function(event){
     
     
     
+=======
+    
+    console.log("I've been clicked!");
+    console.log(event.target.textContent);
+    //event.target.textContent is the name we are comparing
+    console.log(jsonEverything);
+
+    console.log(jsonEverything.people[0].name);
+
+    for(var i = 0; i < jsonEverything.people.length; i++){
+	console.log(i);
+	if(event.target.textContent === jsonEverything.people[i].name){
+	    personDiv.innerHTML = "<p>Name: " + jsonEverything.people[i].name + "</p>" +
+                "<p>Address1: " + jsonEverything.people[i].address1 + "</p>" +
+                "<p>Address2: " + jsonEverything.people[i].address2 + "</p>" +
+                "<p>City: " + jsonEverything.people[i].city + "</p>" +
+                "<p>State: " + jsonEverything.people[i].state + "</p>" +
+                "<p>Zip: " + jsonEverything.people[i].zip + "</p>" +
+                "<p>Major 1: " + jsonEverything.people[i].ma1 + "</p>" +
+                "<p>Major 2: " + jsonEverything.people[i].ma2 + "</p>" +
+                "<p>Major 3: " + jsonEverything.people[i].ma3 + "</p>" +
+                "<p>Minor 1: " + jsonEverything.people[i].mi1 + "</p>" +
+                "<p>Minor 2: " + jsonEverything.people[i].mi2 + "</p>" +
+                "<p>Minor 3: " + jsonEverything.people[i].mi3 + "</p>" +
+                "<p>Graduation Date: " + jsonEverything.people[i].grad + "</p>" +
+                "<p>Email: " + jsonEverything.people[i].email + "</p>";
+	}
+    }
+
+
+
+
+>>>>>>> 69e1028929aaae1b4e2c9879b5d39f9d51a85074
 }
 
 
@@ -72,7 +106,7 @@ var addToAdmin = function(){
 
     var JSONnames = JSON.parse(jsonNameString);
 
-    for(var i = 0; i < JSONames.length; i++){
+    for(var i = 0; i < JSONnames.length; i++){
 	var newLi = document.createElement("li");
 	var newName = document.createTextNode(JSONnames[i]);
 	newLi.appendChild(newName);
