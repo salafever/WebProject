@@ -1,0 +1,36 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- http://www.w3schools.com/graphics/google_maps_overlays.asp -->
+<!-- THIS HELPS HAVE TEXT BOXES OVER MARKERS -->
+
+  
+  <head>
+    <title>Playing with Google Maps API</title>
+  </head>
+
+  <body>
+
+    <div id="map" style="width:100%; height: 500px"></div>
+
+    <script>
+      function myMap() {
+        var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+      scrollwheel: false,
+      draggable: false,
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 4,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  </body>
+</html>
