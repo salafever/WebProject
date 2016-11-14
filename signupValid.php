@@ -37,6 +37,7 @@ $newAlum->addChild('mi2', "");
 $newAlum->addChild('mi3', "");
 $newAlum->addChild('gradMon', "");
 $newAlum->addChild('gradYear', "");
+$newAlum->addChild('usercookie', $cookie_int);
 //ASSERT: fill the rest of the database with empty
 
 

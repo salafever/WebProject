@@ -49,7 +49,7 @@ if(isset($_GET['attempt'])){
       </div>
       
     </div>
-
+ 
 
     <div id="infoDiv">
       <p id="infoParagraph">Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p>

@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-<alum><name>Kimi</name><email>klskfj</email></alum><alum><name>Kimi</name><email>kimikimi</email></alum><alum><name>Kimi</name><email>email@roanoke.edu</email></alum><alum><name>Kimi</name><email>email@roanoke.edu</email></alum></database>
+
+
+<alum><name>Kimi</name><email>email@roanoke.edu</email><address1>221 College Lane</address1><address2>P.O. Box 550</address2><city>Salem</city><state>Virginia</state><zip>24153</zip><ma1>Mathematics</ma1><ma2>Theatre Performance</ma2><ma3></ma3><mi1></mi1><mi2></mi2><mi3></mi3><gradMon>May</gradMon><gradYear>2017</gradYear><usercookie>7119</usercookie></alum></database>

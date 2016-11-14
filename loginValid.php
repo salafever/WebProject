@@ -20,7 +20,7 @@ if(isset($_POST['login']) && isset($_POST['password'])){
             header("Location: adminPage.html");
             //ASSERT: set a cookie to remember the administrator being
             //        logged in, so we get redirected.
-        }        
+        }
         else{
             header("Location: mainPage.php?attempt=0");
             //ASSERT: redirects back to the mainpage with a

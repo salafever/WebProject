@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <allusers>
-  <user>
-    <name>Kimi</name>  
-    <email>email@roanoke.edu</email>
-    <password>password</password>
-    <cookie>5427</cookie>
-  </user>
-  <user>
-    <name>Admin</name>
-    <email>admin@roanoke.edu</email>
-    <password>password</password>
-    <cookie>1</cookie>
-  </user>
-</allusers>
-
+<user><name>Kimi</name><password>password</password><email>email@roanoke.edu</email><cookie>7119</cookie></user></allusers>

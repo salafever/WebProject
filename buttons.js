@@ -5,7 +5,7 @@
 //PRE: The Account Settings button was clicked
 //POST: Redirects the user to the Account Settings Page
 var toAccountSettings = function(){
-    window.location.href = 'accountSettings.html';
+    window.location.href = 'accountSettings.php';
 }
 
 //PRE: Button was clicked
