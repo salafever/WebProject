@@ -19,7 +19,7 @@ if(isset($_POST['login']) && isset($_POST['password'])){
         }
         else if($_POST['login'] == $adminName && $_POST['password'] == $adminPassword){
             setcookie('usercookie', $aUser->cookie, false);
-            header("Location: adminPage.html");
+            header("Location: adminPage.php");
             //ASSERT: set a cookie to remember the administrator being
             //        logged in, so we get redirected.
         }
