@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
     <link type="text/css" rel="stylesheet" href="homeBody.css">
     <link type="text/css" rel="stylesheet" href="mainLogin.css"> 
@@ -26,11 +27,20 @@
     </div>
 
     <div id="bodyDiv">
+
+      <?php
+
+      $database = simplexml_load_file("database.xml");
+
+
+      ?>
       
+
+     
       <!-- User Inputs their Name -->
       <div id="textName">
 	<p class="textProp">Name: </p>
-	<input class="theInput" type="text"></input>
+	<input class="theInput" type="text" value=></input>
 	<p class="textProp">Email: </p>
 	<input class="theInput" type="text"></input>
       </div>
@@ -74,6 +84,9 @@
 	  <br/>
 	  <p class="textProp">Minor 2: </p>
 	  <input class="theInput" type="text"></input>
+      <br/>
+      <p class="textProp">Minor 3: </p>
+      <input class="theInput" type="text"></input>
 	</div>
       </div>
 

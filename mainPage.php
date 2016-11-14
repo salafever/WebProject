@@ -7,16 +7,16 @@
 
 <?php
 
-if(isset($_COOKIE['failedattempt'])){
-    echo "<p>Invalid username and/or password. Try again.";
-    unset($_COOKIE['failedattempt']);
+if(isset($_GET['attempt'])){
+    //ASSERT: The user attempted to login and failed.
+    echo "<p>Invalid username and/or password. Try again.</p>";
+    unset($_GET['attempt']);
+    //ASSERT: Unset the URL parameter until another attempt
+    //        fails again.
 }
-
 
 ?>
 
-
-    
     <title>Roanoke College Physics</title>
     <link type="text/css" rel="stylesheet" href="homeBody.css">
     <link type="text/css" rel="stylesheet" href="mainLogin.css">

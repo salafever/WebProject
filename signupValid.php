@@ -26,6 +26,22 @@ $xml = simplexml_load_file("database.xml");
 $newAlum = $xml->addChild('alum');
 $newAlum->addChild('name', $name);
 $newAlum->addChild('email', $email);
+$newAlum->addChild('address1', "");
+$newAlum->addChild('address2', "");
+$newAlum->addChild('city', "");
+$newAlum->addChild('state', "");
+$newAlum->addChild('zip', "");
+$newAlum->addChild('ma1', "");
+$newAlum->addChild('ma2', "");
+$newAlum->addChild('ma3', "");
+$newAlum->addChild('mi1', "");
+$newAlum->addChild('mi2', "");
+$newAlum->addChild('mi3', "");
+$newAlum->addChild('gradMon', "");
+$newAlum->addChild('gradYear', "");
+//ASSERT: fill the rest of the database with empty
+
+
 $xml->asXML("database.xml");
 //ASSERT: add information to the database
 
