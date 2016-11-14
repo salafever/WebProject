@@ -55,22 +55,18 @@ if(isset($_GET['attempt'])){
       <p id="infoParagraph">Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p>
     </div>
 
-     /* <div id="map" style="width:60%; height: 500px"></div> */
-     /* <script src="somemap.js"></script> */
      
-     /* <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> */
-     
-    <div id="theMap">
-      <svg id="svgMAP" width="800px" height="800px">
-	<image xlink:href="map.jpg" height="800px" width="800px"/>
-               
-      </svg>
-    </div>
-
+     <div id="map" style="margin: auto; width:60%; height: 400px"></div>
 
     
 
 
   </body>
   <script src="buttons.js"></script>
+  <script src="mainmap.js"></script>
+        
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
+     
 </html>

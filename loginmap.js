@@ -2,7 +2,7 @@ var myMap = function() {
 
     var mapOptions = {
         zoom: 4,
-	center: new google.maps.LatLng(20.850033, -87.6500523),
+	center: new google.maps.LatLng(37.850033, -95.6500523),
 	//ASSERT: positioning of the map
 	
 	scrollwheel: false,
@@ -61,12 +61,9 @@ var myMap = function() {
     //Place marker on the map.
 
     //Use a for loop
-
-
-
-
     
     // To add the marker to the map, call setMap();
     marker.setMap(map);
+
+    
 }
-   
