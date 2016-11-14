@@ -4,6 +4,19 @@
 
 <html>
   <head>
+
+<?php
+
+if(isset($_COOKIE['failedattempt'])){
+    echo "<p>Invalid username and/or password. Try again.";
+    unset($_COOKIE['failedattempt']);
+}
+
+
+?>
+
+
+    
     <title>Roanoke College Physics</title>
     <link type="text/css" rel="stylesheet" href="homeBody.css">
     <link type="text/css" rel="stylesheet" href="mainLogin.css">

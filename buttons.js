@@ -11,7 +11,7 @@ var toAccountSettings = function(){
 //PRE: Button was clicked
 //POST: Redirects the user to the main page
 var toMainPage = function(){
-    window.location.href = 'mainPage.html';
+    window.location.href = 'mainPage.php';
 }
 
 //PRE: Login button was clicked
