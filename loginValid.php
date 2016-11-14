@@ -1,5 +1,3 @@
-//Author: Kimi Halverson
-
 <?php
 
 $adminName = "Admin";

@@ -52,13 +52,18 @@ if(isset($_GET['attempt'])){
 
 
     <div id="infoDiv">
-      <p id="infoParagraph">This is text that Dr. Fleenor will give us about the webpage. This will be about anything he wants. What the website and meant for, who is it meant for, what can the website do, etc. This will also tell you a little about the Physics Department as well. This little blerp will be on every single page along with a header with the tabs you can go to.</p>
+      <p id="infoParagraph">Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p>
     </div>
-    
+
+     /* <div id="map" style="width:60%; height: 500px"></div> */
+     /* <script src="somemap.js"></script> */
+     
+     /* <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> */
+     
     <div id="theMap">
       <svg id="svgMAP" width="800px" height="800px">
 	<image xlink:href="map.jpg" height="800px" width="800px"/>
-
+               
       </svg>
     </div>
 

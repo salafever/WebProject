@@ -15,6 +15,8 @@ var myMap = function() {
 	//ASSERT: style of the map
     };
 
+    
+
     var mapCanvas = document.getElementById("map");
     //ASSERT: get the element of the map div
 
