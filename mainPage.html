@@ -22,13 +22,15 @@
       
       <div id="userLogin">
 
-	<p class="textProp">User</p>
-	<input class="theInput" type="text">
+	<form action="loginValid.php" method="post">
+	  Login: <input style="width: 50px;" type="text" name="login"></input>
+	  <br/>
+	  Password: <input style="width: 50px;" type="text" name="password"></input>
+          </br>
+	  <input type="submit" value="Submit">
+	  
+	</form>
 
-	<p class="textProp">Password</p>
-	<input class="theInput" type="text">
-
-      	<button type="button" onclick="toLoggedIn()">Log In</button>
 	<button type="button" onclick="toSignup()">Sign up</button>
 	
       </div>
