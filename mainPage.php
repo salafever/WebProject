@@ -49,7 +49,7 @@ if(isset($_GET['attempt'])){
       </div>
       
     </div>
-
+ 
 
     <div id="infoDiv">
       <p id="infoParagraph">This is text that Dr. Fleenor will give us about the webpage. This will be about anything he wants. What the website and meant for, who is it meant for, what can the website do, etc. This will also tell you a little about the Physics Department as well. This little blerp will be on every single page along with a header with the tabs you can go to.</p>
