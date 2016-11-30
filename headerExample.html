@@ -3,10 +3,13 @@
 
   <head>
     <title>Messing With Bootstrap</title>
-
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap script -->
 
-    <link rel="stylesheet" href="stylesheet.css"></script>
+    <link rel="stylesheet" href="bootStylesheet.css"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -64,9 +67,9 @@
     <div id="header" >
       <div class="row">
 	<div class="col-xs-12 col-md-6" >
-	  <img id="theLogo" src="logo.png" style="display:inline"></img>
+	  <img class="img-responsive" id="theLogo" src="logo.png" style="display:inline"></img>
 	</div>
-	<div class="col-xs-12 col-md-6">
+	<div class="hidden-xs hidden-sm col-md-6">
 	  <p class="paragraph">Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p>
 	</div>
       </div>
