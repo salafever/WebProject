@@ -1,0 +1,50 @@
+/* Author: Kimi Halverson */
+
+.loginFields{
+    width: 40px;
+    font-size: 12px;
+    padding: 0px;
+}
+
+#USER{
+    float: left;
+    width: 50px;
+    font-size: 12px;
+}
+
+#USER{
+    width: 60px;
+}
+
+#PASS{
+    float: right;
+    width: 60px;
+}
+
+#userLogin {
+    border: 2px solid white;
+    height: 80px;
+    width: 150px;
+    float: right;
+    margin-top: 10px;
+    font-size: 12px;
+    position: relative;
+    height: 160px;
+    width: 200px;
+    float: right;
+    margin-top: 5px;
+}
+
+#Password{
+    font-size: 16px;
+    display: inline;
+    color: white;
+    font-family: Libre Baskerville, serif;
+}
+
+#Username{
+    font-size: 16px;
+    display: inline;
+    color: white;
+    font-family: Libre Baskerville, serif;
+}
