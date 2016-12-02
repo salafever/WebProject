@@ -2,14 +2,13 @@
 <html>
 
   <head>
-    <title>Messing With Bootstrap</title>
+    <title>Bootstrap Example</title>
     
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     
     <!-- Bootstrap script -->
-
-    <link rel="stylesheet" href="bootStylesheet.css"></script>
+    <link rel="stylesheet" href="bootStylesheet.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,13 +16,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
   </head>
-
-  <body>
+  
+  <body style="background: #333132">
 
     <!-- NAVBAR -->    
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-	
 	<div class="navbar-header">
 	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -33,36 +31,27 @@
 	  </button>
 	  <a class="navbar-brand" href="#">Welcome!</a>
 	</div>
-
-   
+	
+	<!-- Collapsing the Navbar -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	  <form id="signin" class="navbar-form navbar-right" role="form">
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
               <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
-                        </div>
-	    
+            </div>
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
               <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
             </div>
 	    
+	    <!-- Buttons and Submitting -->
             <button type="submit" class="btn buttonFeat">Login</button>
 	    <button type="button" class="btn buttonFeat">SignUp</button>
           </form>
-	  
 	</div>
       </div>
     </nav>
     
-    <!-- <div class="jumbotron" style="background:#70132d"> -->
-    <!--   <img id="theLogo" src="logo.png" style="display:inline"></img> -->
-    <!--   <\!-- Make into a div and inline-block -\-> -->
-    <!--   <div id="tempPara"> -->
-    <!-- 	<p>Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p> -->
-    <!--   </div> -->
-    <!-- </div> -->
-
     <!-- Grid row - 2 columns-->
     <div id="header" >
       <div class="row">
@@ -70,19 +59,18 @@
 	  <img class="img-responsive" id="theLogo" src="logo.png" style="display:inline"></img>
 	</div>
 	<div class="hidden-xs hidden-sm col-md-6">
-	  <p class="paragraph">Hello Alumni! Welcome to the Physics Department Alumni website where you can connect with Physics Alumni of all years. This website allows you to input your information to further connect with others around the country. Check out the map to see where other Alumni are at the moment!</p>
+	  <p class="paragraph">Hello Alumni! Welcome to the Physics Alumni website where you can connect with fellow Alumni and become a resource for our aspiring majors. Check out the map to see where other Alumni are at the moment!</p>
 	</div>
       </div>
     </div>
 
+    <!-- Map -->
+    <div id="map"></div>
 
-    
-    <!-- <div class="container"> -->
-    <!--   <p>This is some text.</p>       -->
-    <!--   <p>This is another text.</p>       -->
-    <!-- </div> -->
-
-    
   </body>
-  
+
+  <!-- Scripts for JavaScript and the Map -->
+  <script src="mainmap.js"></script>      
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
 </html>
