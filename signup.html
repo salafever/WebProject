@@ -4,7 +4,7 @@
   <head>
     <link type="text/css" rel="stylesheet" href="homeBody.css">
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">    
     <title>Sign Up</title>
   </head>
@@ -27,12 +27,10 @@
     
     <div id="bodyDiv">
 
-      <form action="signupValid.php" method="post">
-	<br/>
-	<!-- The form for signing up -->
-	Full name: <input class="theInput" type="text" name="name"></input><br/>
-	Email: <input class="theInput" type="text" name="email"></input><br/>
-	Password: <input class="theInput" type="text" name="password"></input><br/>
+        <br/>
+	Full name: <input class="theInput" id="name" type="text"></input><br/>
+	Email: <input class="theInput" id="email" type="text"></input><br/>
+	Password: <input class="theInput" id="password" type="text"></input><br/>
 	Confirm Password: <input class="theInput" type="text"></input><br/>    
 
 	<!-- The Disclaimer -->
@@ -41,12 +39,11 @@
         <input id="checkbox" type="checkbox"></input>
 
 	<!-- Submit Button -->
-        <input type="submit" value="Submit">     
-  
-      </form>
-      
+	<button id="signupButton" type="button">Sign Up</button> 
+	
     </div>
 
   </body>
   <script src="buttons.js"></script>
+  <script src="signupAccount.js"></script>
 </html>

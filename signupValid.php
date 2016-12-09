@@ -5,6 +5,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $cookie_int = random_int(0, 10000);
+$signupUser = json_decode($_POST['aUser']);
+echo $signupUser;
+
+
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $password  = $_POST['password'];
