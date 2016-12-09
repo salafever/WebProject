@@ -12,6 +12,10 @@ body{
     height: 400px;
 }
 
+
+/* Using bootstrap */
+
+/* This is an ID that is used for every page on the website as the header */
 #header{
     background-color: #70132d;
     position: relative;
@@ -22,65 +26,114 @@ body{
     color: white;
 }
 
-/* Using bootstrap */
+/* This is a class that gives the login and signup buttons more color based on */
+/* on the color scheme for the website */
 .buttonFeat {
     color: #fff;
     background-color: #70132d;
     border-color: #70132d;
 }
 
+/* This is a class that is used for the paragraph that is always in the header */
 .paragraph {
     font-size: 22px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-right: 60px;
     font-family: Libre Baskerville, serif;
 }
+
+/* This is an ID that is used for every text box that is used in AccSettings */
+#textBox {
+    color: white;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    width: 80%;
+    padding-left: 40px;
+}
+
+/* This is an ID for the question on majors and minors */
+#question {
+    width: 80%;
+    display: block;
+    color: white;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    font-size: 20px;
+}
+
+/* Makes sure the text boxes used to login change depending on whether you are
+   on a computer or mobile device */
+#userInfo {
+    width: 50%;
+}
+
+/* Space to create between different topics */
+#space {
+    padding-bottom: 40px;
+}
+
+/* This is an ID that is used for any Graduation text boxes in AccSettings */
+#GradBox {
+    color: white;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    width: 60%;
+    padding-left: 40px;
+}
+
+/* This is an ID that is used for any submit buttons. This is used in the 
+   Account Settings and the SignUp page. */
+#submitButt {
+    background-color: #70132d; 
+    color: white;
+    border-color: #333132;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* This is an ID that is used for every text box that is used in SignUp */
+#textSignUp {
+    color: white;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    width: 60%;
+    padding-left: 40px;
+}
+
+/* This is an ID that is used in the SignUp for the word "Disclaimer" */
+#disclaim {
+    position: relative;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/* This is an ID that is used in the SignUp for the disclaimer paragraph */
+#disclaimPara {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+}
+
+/* This is an ID that is used in the SignUp for the checkbox */
+#checkbox {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
 /* End of bootstrap */
 
-#welcomeNote {
-    position: absolute;
-    bottom: 8px;
-    right: 190px;
-    font-size: 18px;
-    color: white;
-}
-
-#accountPage {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
-    color: white;
-}
-
-#infoDiv {
-    background-color: #8F8F8F;
-    height: 150px;
-    width: 500px;
-    margin-top: 10px;
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Libre Baskerville, serif;
-}
-
-#infoParagraph {
-    padding-top: 15px;
-    padding-left: 5px;
-}
-
-#bodyDiv {
-    height: 1000px;
-    width: 1000px;
-    position: relative;
-    
-}
-
-#nameOfPage {
-    position: absolute;
-    margin-top: 30px;
-    padding-left: 20px;
-}
 
 .theInput {
     width: 300px;
@@ -91,83 +144,7 @@ body{
     display: inline-block;
 }
 
-#textName {
-    position: relative;
-    margin-top: 40px;
-    display: block;
-}
-
-#textAddress {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-}
-
-#question {
-    color: white;
-    position: relative;
-    margin-top: 20px;
-}
-
-#textMaj {
-    position: relative;
-    margin-top: 20px;
-    display: float;
-}
-
-#textMin {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-    display: float;
-}
-
-#divMinMaj {
-    position: relative;
-    display: block;
-}
-
-#textGradDate {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-}
-
-#submitButton {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 190px;
-    display: block;
-}
-
-#textEmail {
-    position: relative;
-    margin-top: 20px;
-    display: block;
-}
-
-#textPassword {
-    position: relative;
-    display: block;
-}
-
-#disclaim {
-    position: relative;
-    color: white;
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
-#disclaimPara {
-    position: relative;
-    color: white;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-#checkbox {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 100px;
-}
-
+/* #textPassword { */
+/*     position: relative; */
+/*     display: block; */
+/* } */

@@ -2,55 +2,34 @@
 <html>
 
   <head>
-    <title>Bootstrap Example</title>
+    <title>Account Settings</title>
     
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     
     <!-- Bootstrap script -->
-    <link rel="stylesheet" href="bootStylesheet.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootStylesheet.css">
     
   </head>
   
-  <body style="background: #333132">
+  <body>
 
+    
     <!-- NAVBAR -->    
     <nav class="navbar navbar-default">
       <div class="container-fluid">
 	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-	  </button>
 	  <a class="navbar-brand" href="#">Welcome!</a>
 	</div>
 	
-	<!-- Collapsing the Navbar -->
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	  <form id="signin" class="navbar-form navbar-right" role="form">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-              <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
-            </div>
-	    
-	    <!-- Buttons and Submitting -->
-            <button type="submit" class="btn buttonFeat">Login</button>
-	    <button type="button" class="btn buttonFeat">SignUp</button>
-          </form>
-	</div>
       </div>
     </nav>
+    
     
     <!-- Grid row - 2 columns-->
     <div id="header" >
@@ -64,16 +43,160 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+	<!-- User name -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Name:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<!-- User email -->
+	<div id="textBox" class="form-group">
+	  <label for="pwd">Email:</label>
+	  <input type="text" class="form-control" id="pwd">
+	</div>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+	<!-- City and State -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">City:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<div id="textBox" class="form-group">
+	  <label for="pwd">State:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="pwd">Email:</label>
-      <input type="password" class="form-control" id="pwd">
+      
+    <div class="row">
+      <!-- User gives their majors and minors -->
+      <p id="question">What were the majors and minors that you graduated with at Roanoke College?</p>
+    </div>
+    
+    <div class="row">	
+      <div class="col-xs-12 col-md-6">
+	<!-- User Major 1 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Major 1:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<!-- User Major 2 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Major 2:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<!-- User Major 3 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Major 3:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>	
+      </div>
+      
+      <div class="col-xs-12 col-md-6">
+	<!-- User Minor 1 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Minor 1:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<!-- User Minor 2 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Minor 2:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	
+	<!-- User Minor 3 -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Minor 3:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>	
+      </div>
     </div>
 
+    <div class="row">
+      <p id="space"></p>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+	<!-- User Job Title -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Job Title:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	<!-- User Workphone -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">Work Phone Number:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>	
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+	<!-- User Linkedin Account -->
+	<div id="textBox" class="form-group">
+	  <label for="usr">LinkedIn Account:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>	
+      </div>
+    </div>
+
+    <div class="row">
+      <p id="space"></p>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+	<!-- Big box for User Input on their Job Description -->
+	<div id="textBox" class="form-group">
+	  <label for="comment">Job Description:</label>
+	  <textarea class="form-control" rows="5" id="comment"></textarea>
+	</div>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+	<!-- Big box for User Input on any Advanced Degrees -->
+	<div id="textBox" class="form-group">
+	  <label for="comment">Advanced Degrees:</label>
+	  <textarea class="form-control" rows="5" id="comment"></textarea>
+	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p id="space"></p>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+	<!-- Graduation Month -->
+	<div id="GradBox" class="form-group">
+	  <label for="usr">Graduation Month:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>
+	<!-- Graduation Year -->
+	<div id="GradBox" class="form-group">
+	  <label for="usr">Graduation Year:</label>
+	  <input type="text" class="form-control" id="usr">
+	</div>	
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+      </div>
+    </div>
+
+    <div class="row">
+      <input id="submitButt" type="submit" class="btn btn-info btn-md" value="Update Account">
+    </div>
+    
+    <div class="row">
+      <p id="space"></p>
+    </div>
+    
   </body>
-
-
 </html>

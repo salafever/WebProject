@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Sign Up</title>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap script -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootStylesheet.css">
+    
+  </head>
+  
+  <body>
+
+    
+    <!-- NAVBAR -->    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <a class="navbar-brand" href="#">Welcome!</a>
+	</div>
+	
+      </div>
+    </nav>
+    
+    
+    <!-- Grid row - 2 columns-->
+    <div id="header" >
+      <div class="row">
+	<div class="col-xs-12 col-md-6" >
+	  <img class="img-responsive" id="theLogo" src="logo.png" style="display:inline"></img>
+	</div>
+	<div class="hidden-xs hidden-sm col-md-6">
+	  <p class="paragraph">Hello Alumni! Welcome to the Physics Alumni website where you can connect with fellow Alumni and become a resource for our aspiring majors. Check out the map to see where other Alumni are at the moment!</p>
+	</div>
+      </div>
+    </div>
+
+    <!-- User signup -->
+    <div id="textSignUp" class="form-group">
+      <!-- User Name -->
+      <label for="usr">Full Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div id="textSignUp" class="form-group">
+      <!-- User Email -->
+      <label for="usr">Email:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div id="textSignUp" class="form-group">
+      <!-- User Password -->
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div id="textSignUp" class="form-group">
+      <!-- User Confirmed Password -->
+      <label for="pwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+
+    <div class="row">
+      <p id="disclaim">DISCLAIMER:</p>
+    </div>    
+    
+    <div class="row">
+      <!-- User is given a Disclaimer -->
+      <p id="disclaimPara">Your information will only be used for the Physics department and Dr. Fleenor. This information will only be accessed with your knowledge. By clicking the checkbox, you are accepting the following.</p>
+    </div>
+
+    <div>
+      <div id="checkbox" class="checkbox-inline">
+	<label><input type="checkbox" value="">Option 2</label>
+      </div>
+      <input id="submitButt" type="submit" class="btn btn-info btn-md" value="Update Account">
+    </div>
+
+    <div class="row">
+      <p id="space"></p>
+    </div>
+
+    
+  </body>
+</html>
