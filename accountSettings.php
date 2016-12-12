@@ -38,11 +38,8 @@ foreach($database->alum as $anAlum){
     if($usercookie == $anAlum->usercookie){
         $name = $anAlum->name;
         $email = $anAlum->email;
-        $address1 = $anAlum->address1;
-        $address2 = $anAlum->address2;
         $city = $anAlum->city;
         $state = $anAlum->state;
-        $zip = $anAlum->zip;
         $ma1 = $anAlum->ma1;
         $ma2 = $anAlum->ma2;
         $ma3 = $anAlum->ma3;

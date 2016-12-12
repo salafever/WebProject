@@ -6,26 +6,32 @@ ini_set('display_errors', '1');
 
 $database = simplexml_load_file("database.xml");
 
+$updatedUser = json_decode($_POST['updateUser'], true);
+
+
 foreach ($database->alum as $anAlum){
     if($_COOKIE['usercookie'] == $anAlum->usercookie){
         //ASSERT: match the user's cookie with the one in the
         //        database
-        $anAlum->name = $_POST['name'];
-        $anAlum->email = $_POST['email'];
-        $anAlum->address1 = $_POST['address1'];
-        $anAlum->address2 = $_POST['address2'];
-        $anAlum->city = $_POST['city'];
-        $anAlum->state = $_POST['state'];
-        $anAlum->zip = $_POST['zip'];
-        $anAlum->ma1 = $_POST['ma1'];
-        $anAlum->ma2 = $_POST['ma2'];
-        $anAlum->ma3 = $_POST['ma3'];
-        $anAlum->mi1 = $_POST['mi1'];
-        $anAlum->mi2 = $_POST['mi2'];
-        $anAlum->mi3 = $_POST['mi3'];
+        $anAlum->name = $updatedUser['name'];
+        $anAlum->email = $updatedUser['email'];
+        $anAlum->city = $updatedUser['city'];
+        $anAlum->state = $updatedUser['state'];
+        $anAlum->ma1 = $updatedUser['ma1'];
+        $anAlum->ma2 = $updatedUser['ma2'];
+        $anAlum->ma3 = $updatedUser['ma3'];
+        $anAlum->mi1 = $updatedUser['mi1'];
+        $anAlum->mi2 = $updatedUser['mi2'];
+        $anAlum->mi3 = $updatesUser['mi3'];
 
-        $anAlum->gradMon = $_POST['gradMon'];
-        $anAlum->gradYear = $_POST['gradYear'];
+        $anAlum->title = $updatesUser['title'];
+        $anAlum->phone = $updatesUser['phone'];
+        $anAlum->linkedin = $updatesUser['linkedin'];
+        $anAlum->desc = $updatesUser['desc'];
+        $anAlum->advanced = $updatesUser['advanced'];
+        
+        $anAlum->gradMon = $updatedUser['gradMon'];
+        $anAlum->gradYear = $updatedUser['gradYear'];
         //ASSERT: rewrite everything submitted into the database
     }
 }

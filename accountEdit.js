@@ -1,16 +1,25 @@
 
 //Author: Kimi Halverson
-//Sign up Validation
+//Update Account
 
 $(document).ready(function(){
-    $("#submitButt").click(function(){
-	//ASSERT: the sign up button has been clicked
 
-	console.log("Clicked!");
+
+
+
+    $("#updateButton").click(function(){
+	//ASSERT: the sign up button has been clicked
 	
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
-	var password = document.getElementById("password").value;
+	var city = document.getElementById("city").value;
+	var state = document.getElementById("state").value;
+
+
+
+
+
+	
 	//ASSERT: the input data taken from the name, email, password
 	
 	var userObject =
@@ -27,13 +36,14 @@ $(document).ready(function(){
 	$.ajax({
 	    url: 'signupValid.php',
 	    data: {'aUser': userString},
-	    type: 'POST',
-	    success: function(response){
-		//alert(response);
-	    }
+	    type: 'POST'
 	    //ASSERT: http request is made sending over
 	    //        the user information
 	});
+	
+	// console.log(name);
+	// console.log(email);
+	// console.log(password);
 	
     });
 });
