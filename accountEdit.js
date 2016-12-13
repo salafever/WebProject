@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 
-    $("#updateButton").click(function(){
+    $("#submitButt").click(function(){
 	//ASSERT: the sign up button has been clicked
 	
 	var name = document.getElementById("name").value;
