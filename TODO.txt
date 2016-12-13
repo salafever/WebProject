@@ -1,5 +1,8 @@
 TODO:
 
+	NEED BOOTSTRAP PAGES FOR LOGGED IN, NOT LOGGED IN, ADMINISTRATOR
+
+
 Signup page:
        Fix the submit button
        Don't let the user sign up unless the fields are correct
@@ -24,6 +27,8 @@ MainPage:
 	Redirect to either the mainPage.html if you're logged out,
 	Or to the loggedIn.html if you're logged in
 
+	Redirects to adminpage if they are the admin login/pass
+
 LoggedIn:
 	If anyone tries to go to this page using the URL, automatically redirect them
 	to the main page if they aren't logged in
@@ -39,4 +44,12 @@ InfoPage:
 
 	HTML to get that
 	AJAX call to get all the person's information, no way to edit. Just for viewing.
+	
+AdminPage:
+
+	HTML for this page
+	Use AJAX to get all of the names and years organized
+
+	Take the years and create appropriate divs for those years. Once that is done...
+	Put the correct names under those years. Each of those names have links to INFOPAGE.html
 	
