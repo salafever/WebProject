@@ -5,13 +5,13 @@
 //PRE: The Account Settings button was clicked
 //POST: Redirects the user to the Account Settings Page
 var toAccountSettings = function(){
-    window.location.href = 'accountSettings.php';
+    window.location.href = 'bootAccSettings.html';
 }
 
 //PRE: Button was clicked
 //POST: Redirects the user to the main page
 var toMainPage = function(){
-    window.location.href = 'mainPage.php';
+    window.location.href = 'mainPage.html';
 }
 
 //PRE: Login button was clicked
@@ -24,5 +24,5 @@ var toLoggedIn = function(){
 //PRE: Signup button was clicked
 //POST: Redirects the user to the sign up account page.
 var toSignup = function(){
-    window.location.href = 'signup.html';
+    window.location.href = 'bootSignUp.html';
 }
