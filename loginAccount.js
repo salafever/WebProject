@@ -4,9 +4,6 @@
 
 
 $(document).ready(function(){
-
-
-
     $("loginButton").click(function(){
 
 	var login = document.getElementById("").value;

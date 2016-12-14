@@ -6,9 +6,11 @@ ini_set('display_errors', '1');
 
 $cookie_int = random_int(0, 10000);
 $user_id = random_int(0, 10000);
+//ASSERT: a random integer is generated for the user id
+//        and the cookie id
+
 
 $signupUser = json_decode($_POST['aUser'], true);
-
 
 $name = $signupUser['name'];
 $email = $signupUser['email'];
@@ -56,7 +58,5 @@ $newAlum->addChild('gradYear', "");
 
 $xml->asXML("database.xml");
 //ASSERT: add information to the database
-
-
 
 ?>

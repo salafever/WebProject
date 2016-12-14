@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-<alum><name>Kimi Lamperouge</name><email>kimihalverson@gmail.com</email><city/><state/><ma1/><ma2/><ma3/><mi1/><mi2/><mi3/><title/><phone/><linkedin/><desc/><advanced/><gradMon/><gradYear/><usercookie>6706</usercookie></alum></database>
+  <alum>
+    <name>Administrator</name>
+    <email>fleenor@roanoke.edu</email>
+    <password>rcphysics</password>
+    <usercookie>2396</usercookie>
+  </alum>
+
+  <alum>
+    <name>Kimi Lamperouge</name>
+    <email>kimihalverson@gmail.com</email>
+    <city/>
+    <state/>
+    <ma1/>
+    <ma2/>
+    <ma3/>
+    <mi1/>
+    <mi2/>
+    <mi3/>
+    <title/>
+    <phone/>
+    <linkedin/>
+    <desc/>
+    <advanced/>
+    <gradMon/>\
+    <gradYear/>
+    <usercookie>6706</usercookie>
+  </alum>
+  
+</database>
