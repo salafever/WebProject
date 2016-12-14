@@ -1,6 +1,6 @@
 TODO:
 
-	NEED BOOTSTRAP PAGES FOR LOGGED IN, NOT LOGGED IN, ADMINISTRATOR
+	NEED BOOTSTRAP PAGES FOR ADMINISTRATOR
 
 
 Signup page:
@@ -16,13 +16,13 @@ Account Settings:
 	Have javascript send TRUE for the cookie, we're checking for cookies
 	Push the update account button, take everything in the fields and update
 	the database with it
-	People sign in with Names and Email. Either they change it on the account
-	or they aren't allowed to change it at all. 
+	People sign in with Names and Email. Either they change it on the
+	account or they aren't allowed to change it at all. 
 
 
 MainPage:
-	Have Javascript check if the cookie is set. We can do this through document
-	cookie?
+	Have Javascript check if the cookie is set. We can do this through
+	document cookie?
 
 	Redirect to either the mainPage.html if you're logged out,
 	Or to the loggedIn.html if you're logged in
@@ -30,26 +30,30 @@ MainPage:
 	Redirects to adminpage if they are the admin login/pass
 
 LoggedIn:
-	If anyone tries to go to this page using the URL, automatically redirect them
-	to the main page if they aren't logged in
+	If anyone tries to go to this page using the URL, automatically
+	redirect them to the main page if they aren't logged in
 
-	Have an AJAX call to the database returning all entries including the city, state,
-	name, job title, linkedin
+	Have an AJAX call to the database returning all entries including the
+	city, state, name, job title, linkedin
 
-	Place it on the map with Google Maps API, map pointers have links to the person's
-	information
+	Place it on the map with Google Maps API, map pointers have links to
+	the person's information
 
 
 InfoPage:
 
 	HTML to get that
-	AJAX call to get all the person's information, no way to edit. Just for viewing.
+	AJAX call to get all the person's information, no way to edit. Just
+	for viewing.
 	
 AdminPage:
 
 	HTML for this page
 	Use AJAX to get all of the names and years organized
 
-	Take the years and create appropriate divs for those years. Once that is done...
-	Put the correct names under those years. Each of those names have links to INFOPAGE.html
+	Take the years and create appropriate divs for those years. Once that
+	is done...
+
+	Put the correct names under those years. Each of those names have
+	links to INFOPAGE.html
 	

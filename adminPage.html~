@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Welcome User!</title>
+    <title>Main Page</title>
     
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -35,10 +35,18 @@
 	<!-- Collapsing the Navbar -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	  <form id="signin" class="navbar-form navbar-right" role="form">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="email" id="userInfo" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" id="userInfo" type="password" class="form-control" name="password" value="" placeholder="Password">
+            </div>
 	    
 	    <!-- Buttons and Submitting -->
-            <button type="submit" class="btn buttonFeat">Account Settings</button>
-	    <button type="submit" class="btn buttonFeat">Log Out</button>
+            <button type="submit" class="btn buttonFeat">Login</button>
+	    <button type="submit" class="btn buttonFeat">SignUp</button>
           </form>
 	</div>
       </div>
@@ -62,7 +70,7 @@
   </body>
 
   <!-- Scripts for JavaScript and the Map -->
-  <script src="loginmap.js"></script>      
+  <script src="mainmap.js"></script>      
   <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 </html>

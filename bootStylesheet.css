@@ -2,18 +2,16 @@ body{
     background-color: #333132;
 }
 
-#theInput {
-    width: 200px;    
-}
-
 #map {
     margin: auto;
     width: 60%;
     height: 400px;
 }
 
-
-/* Using bootstrap */
+/* Changing the Logo size */
+#theLogo {
+    width: 240px;
+}
 
 /* This is an ID that is used for every page on the website as the header */
 #header{
@@ -24,6 +22,7 @@ body{
     padding-right: 20px;
     padding-left: 20px;
     color: white;
+    height: 180px;
 }
 
 /* This is a class that gives the login and signup buttons more color based on */
@@ -37,9 +36,10 @@ body{
 /* This is a class that is used for the paragraph that is always in the header */
 .paragraph {
     font-size: 22px;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-right: 60px;
     font-family: Libre Baskerville, serif;
+    
 }
 
 /* This is an ID that is used for every text box that is used in AccSettings */
@@ -131,20 +131,3 @@ body{
     margin-top: 50px;
     margin-left: 100px;
 }
-
-/* End of bootstrap */
-
-
-.theInput {
-    width: 300px;
-}
-
-.textProp {
-    color: white;
-    display: inline-block;
-}
-
-/* #textPassword { */
-/*     position: relative; */
-/*     display: block; */
-/* } */
