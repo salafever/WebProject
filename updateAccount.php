@@ -13,10 +13,9 @@ foreach ($database->alum as $anAlum){
     if($_COOKIE['usercookie'] == $anAlum->usercookie){
         //ASSERT: match the user's cookie with the one in the
         //        database
-        $anAlum->name = $updatedUser['name'];
-        $anAlum->email = $updatedUser['email'];
         $anAlum->city = $updatedUser['city'];
         $anAlum->state = $updatedUser['state'];
+
         $anAlum->ma1 = $updatedUser['ma1'];
         $anAlum->ma2 = $updatedUser['ma2'];
         $anAlum->ma3 = $updatedUser['ma3'];
