@@ -8,21 +8,13 @@ Signup page:
 
        Add a note saying you can't change your name and email after
        you submit
-       
-
-       Fix the submit button
-
 
        Don't let the user sign up unless the fields are correct
        Don't let the user click the button until the box is checked
        Don't let them sign in if a user of the same name exists
 
-       
-
        Log them in automatically, take them to the logged in page
        Button needs to return you to the main page
-
-
 
 
 
@@ -62,7 +54,6 @@ InfoPage:
 	
 AdminPage:
 
-	HTML for this page
 	Use AJAX to get all of the names and years organized
 
 	Take the years and create appropriate divs for those years. Once that
