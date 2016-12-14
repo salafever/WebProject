@@ -21,12 +21,6 @@ $(document).ready(function(){
 
     console.log(userInformation);
 
-
-    
-
-    
-
-
     $("#submitButt").click(function(){
 	//ASSERT: the account update button has been clicked
 	
@@ -91,10 +85,6 @@ $(document).ready(function(){
 	    //ASSERT: http request is made sending over
 	    //        the user information
 	});
-	
-	// console.log(name);
-	// console.log(email);
-	// console.log(password);
 	
     });
 });
