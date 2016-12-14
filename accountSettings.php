@@ -17,7 +17,7 @@
       <p id="welcomeNote">Welcome!</p>
       <h1 id="nameOfPage">Account Settings</h1>
       <div id="userLogin">
-	<button type="button" onclick="toMainPage()">Log Out</button>
+      <button type="button" onclick="toMainPage()">Log Out</button>
       </div>
     </div>
 
