@@ -1,15 +1,31 @@
 TODO:
 
+	NAMESPACES ON EVERY SINGLE JAVASCRIPT FILE. LEAVE NONE ALIVE.
+
 	NEED BOOTSTRAP PAGES FOR LOGGED IN, NOT LOGGED IN, ADMINISTRATOR
 
+	GET RID OF USERS.XML, ADD TO DATABASE.XML
 
 Signup page:
+
+       Add a note saying you can't change your name and email after
+       you submit
+       
+
        Fix the submit button
+
+
        Don't let the user sign up unless the fields are correct
        Don't let the user click the button until the box is checked
        Don't let them sign in if a user of the same name exists
+
+       
+
        Log them in automatically, take them to the logged in page
        Button needs to return you to the main page
+
+
+
 
 
 Account Settings:
