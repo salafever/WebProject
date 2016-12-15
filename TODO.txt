@@ -7,6 +7,11 @@ TODO:
 
 	NAMESPACES ON EVERY SINGLE JAVASCRIPT FILE. LEAVE NONE ALIVE.
 
+	Destroy cookie when you click log out
+
+MAP:
+
+	Ajax: Name, City, State, User_ID, Job Title
 
 
 Signup page:

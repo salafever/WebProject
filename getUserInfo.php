@@ -11,11 +11,6 @@ $database = simplexml_load_file("database.xml");
 $foundUser;
 //ASSERT: to store the user we're looking for
 
-
-/* $cookie = json_decode($_POST['cookie'], name); */
-/* echo $cookie["usercookie"]; */
-
-
 /* foreach($database->alum as $anAlum){ */
 /*     if($_POST['cookie'] == true){ */
 /*         $usercookie = $_COOKIE['usercookie']; */
@@ -33,31 +28,57 @@ $foundUser;
 /* } */
 
 
-/* $user = array( */
-/*     //ASSERT: create an array out of the */
-/*     //        info from the database */
-/*     "name" => $foundUser->name; */
-/*     "email" => $foundUser->email; */
-/*     "city" => $foundUser->city; */
-/*     "state" => $foundUser->state; */
-/*     "ma1" => $foundUser->ma1; */
-/*     "ma2" => $foundUser->ma2; */
-/*     "ma3" => $foundUser->ma3; */
-/*     "mi1" => $foundUser->mi1; */
-/*     "mi2" => $foundUser->mi2; */
-/*     "mi3" => $foundUser->mi3; */
+foreach($database->alum as $anAlum){
+    if ($_COOKIE['usercookie'] == $anAlum->usercookie){
+        $foundUser = $anAlum;
+    }
+}
+
+$name  = $foundUser->name;
+$email = $foundUser->email;
+$city = $foundUser->city;
+$state = $foundUser->state;
+$ma1 = $foundUser->ma1;
+$ma2 = $foundUser->ma2;
+$ma3 = $foundUser->ma3;
+$mi1 = $foundUser->mi1;
+$mi2 = $foundUser->mi2;
+$mi3 = $foundUser->mi3;
     
-/*     "title" => $foundUser->title; */
-/*     "phone" => $foundUser->phone; */
-/*     "linkedin" => $foundUser->linkedin; */
-/*     "desc" => $foundUser->desc; */
-/*     "advanced" => $foundUser->advanced; */
+$title = $foundUser->title;
+$phone = $foundUser->phone;
+$linkedin = $foundUser->linkedin;
+$desc = $foundUser->desc;
+$advanced = $foundUser->advanced;
     
-/*     "gradMon" => $foundUser->gradMon; */
-/*     "gradYear" => $foundUser->gradYear; */
-/* ); */
+$gradMon = $foundUser->gradMon;
+$gradYear = $foundUser->gradYear;
 
 
-/* echo json_encode($user); */
+$user = array(
+    //ASSERT: create an array out of the
+    //        info from the database
+    "name"  => $name,
+    "email" => $email,
+    "city" => $city,
+    "state" => $state,
+    "ma1" => $ma1,
+    "ma2" => $ma2,
+    "ma3" => $ma3,
+    "mi1" => $mi1,
+    "mi2" => $mi2,
+    "mi3" => $mi3,
+    
+    "title" => $title,
+    "phone" => $phone,
+    "linkedin" => $linkedin,
+    "desc" => $desc,
+    "advanced" => $advanced,
+    
+    "gradMon" => $gradMon,
+    "gradYear" => $gradYear
+);
+
+echo json_encode($user);
 
 ?>
