@@ -3,6 +3,8 @@
 //Sign up Validation
 
 $(document).ready(function(){
+
+
     $("#submitButt").click(function(){
 	//ASSERT: the sign up button has been clicked
 

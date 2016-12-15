@@ -5,27 +5,8 @@
     <email>fleenor@roanoke.edu</email>
     <password>rcphysics</password>
     <usercookie>2396</usercookie>
+    <id>0</id>
   </alum>
 
-  <alum>
-    <name>Kimi Lamperouge</name>
-    <email>kimihalverson@gmail.com</email>
-    <city/>
-    <state/>
-    <ma1/>
-    <ma2/>
-    <ma3/>
-    <mi1/>
-    <mi2/>
-    <mi3/>
-    <title/>
-    <phone/>
-    <linkedin/>
-    <desc/>
-    <advanced/>
-    <gradMon/>\
-    <gradYear/>
-    <usercookie>6706</usercookie>
-  </alum>
   
-</database>
+<alum><name>Kimi Lamperouge</name><email>kimihalverson@gmail.com</email><password>password</password><usercookie>4172</usercookie><id>6327</id><city>Salem</city><state></state><ma1></ma1><ma2></ma2><ma3></ma3><mi1></mi1><mi2></mi2><mi3></mi3><title></title><phone></phone><linkedin></linkedin><desc></desc><advanced></advanced><gradMon></gradMon><gradYear></gradYear></alum></database>

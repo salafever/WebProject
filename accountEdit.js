@@ -2,24 +2,45 @@
 //Author: Kimi Halverson
 //Update Account
 
+namespace = {};
+namespace.userInformation;
+
+//PRE: name is the name of the cookie we want
+//POST:
+// var getCookie = function(name){
+//     var re = new RegExp(name + "=([^;]+)");
+//     var value = re.exec(document.cookie);
+//     return (value != null) ? unescape(value[1]) : null;
+// }
+
 $(document).ready(function(){
     //ASSERT: the document loaded so we can populate the
     //        account
-    
-    $.ajax({
-	url: 'getUserInfo.php',
-	data: {'cookie': true},
-	type: 'POST',
-	//ASSERT: http request is made sending over
-	//        the user information
 
-	success: function(data){
-	    var userInformation = response;
-	}
-    });
+    // console.log(document.cookie);
+    // var currentCookie = getCookie("usercookie");
     
 
-    console.log(userInformation);
+    // var cookieObject =
+    // 	{
+    // 	    "usercookie": currentCookie
+    // 	}
+    // var cookieString = JSON.stringify(cookieObject);
+    
+    // $.ajax({
+    // 	url: 'getUserInfo.php',
+    // 	data: {'cookie': cookieString},
+    // 	type: 'POST',
+    // 	//ASSERT: http request is made sending over
+    // 	//        the user information
+
+    // 	success: function(response){
+    // 	    console.log(response);
+    // 	}
+    // });
+    
+
+ 
 
     $("#submitButt").click(function(){
 	//ASSERT: the account update button has been clicked
@@ -75,15 +96,18 @@ $(document).ready(function(){
 	    }
 	//ASSERT: information placed into a JSON object
 	
-	var updateString = JSON.stringify(userObject);
+	var updateString = JSON.stringify(updateObject);
 	//ASSERT: the object is converted to a string
 	
 	$.ajax({
-	    url: 'updateUser.php',
-	    data: {'aUser': userString},
-	    type: 'POST'
+	    url: 'updateAccount.php',
+	    data: {'aUser': updateString},
+	    type: 'POST',
 	    //ASSERT: http request is made sending over
 	    //        the user information
+	    success: function(Aresponse){
+		console.log(Aresponse);
+	    }
 	});
 	
     });

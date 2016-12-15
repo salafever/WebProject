@@ -6,11 +6,13 @@ ini_set('display_errors', '1');
 
 $database = simplexml_load_file("database.xml");
 
-$updatedUser = json_decode($_POST['updateUser'], true);
+$updatedUser = json_decode($_POST['aUser'], true);
+
+echo $updatedUser['city'];
 
 
 foreach ($database->alum as $anAlum){
-    if($_COOKIE['usercookie'] == $anAlum->usercookie){
+    if($_COOKIE['usercookie'] == $anAlum->usercookie && $anAlum->name != "Administrator"){
         //ASSERT: match the user's cookie with the one in the
         //        database
         $anAlum->city = $updatedUser['city'];
@@ -21,13 +23,13 @@ foreach ($database->alum as $anAlum){
         $anAlum->ma3 = $updatedUser['ma3'];
         $anAlum->mi1 = $updatedUser['mi1'];
         $anAlum->mi2 = $updatedUser['mi2'];
-        $anAlum->mi3 = $updatesUser['mi3'];
+        $anAlum->mi3 = $updatedUser['mi3'];
 
-        $anAlum->title = $updatesUser['title'];
-        $anAlum->phone = $updatesUser['phone'];
-        $anAlum->linkedin = $updatesUser['linkedin'];
-        $anAlum->desc = $updatesUser['desc'];
-        $anAlum->advanced = $updatesUser['advanced'];
+        $anAlum->title = $updatedUser['title'];
+        $anAlum->phone = $updatedUser['phone'];
+        $anAlum->linkedin = $updatedUser['linkedin'];
+        $anAlum->desc = $updatedUser['desc'];
+        $anAlum->advanced = $updatedUser['advanced'];
         
         $anAlum->gradMon = $updatedUser['gradMon'];
         $anAlum->gradYear = $updatedUser['gradYear'];
@@ -36,7 +38,7 @@ foreach ($database->alum as $anAlum){
 }
 
 $database->asXML("database.xml");
-header("Location: accountSettings.php");
+
 //ASSERT: save XML and redirect
 
 ?>

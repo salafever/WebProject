@@ -1,8 +1,13 @@
 TODO:
 
+
+	MAKE SURE ADMINISTRATIVE PAGE ONLY PULLS INFORMATION FROM
+	THE SERVER UNLESS THE COOKIE IS SET AND THAT COOKIE VALUE
+	MATCHES THE VALUE OF THE ADMIN IN THE DATABASE
+
 	NAMESPACES ON EVERY SINGLE JAVASCRIPT FILE. LEAVE NONE ALIVE.
 
-	GET RID OF USERS.XML, ADD TO DATABASE.XML
+
 
 Signup page:
 
@@ -36,6 +41,10 @@ MainPage:
 	Redirects to adminpage if they are the admin login/pass
 
 LoggedIn:
+
+	Have javascript check if a cookie is set to a number currently
+	residing in the database
+	
 	If anyone tries to go to this page using the URL, automatically
 	redirect them to the main page if they aren't logged in
 

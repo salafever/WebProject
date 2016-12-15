@@ -59,4 +59,5 @@ $newAlum->addChild('gradYear', "");
 $xml->asXML("database.xml");
 //ASSERT: add information to the database
 
+
 ?>

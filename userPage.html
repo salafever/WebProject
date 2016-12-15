@@ -1,176 +1,82 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap script -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootStylesheet.css">
-    
-  </head>
-  
   <body>
 
-    <!-- NAVBAR -->    
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-	<div class="navbar-header">
-	  <a class="navbar-brand" href="#">Welcome!</a>
-	</div>
-	
-      </div>
-    </nav>
-        
-    <!-- Grid row - 2 columns-->
-    <div id="header" >
-      <div class="row">
-	<div class="col-xs-12 col-md-6" >
-	  <img class="img-responsive" id="theLogo" src="logo.png" style="display:inline"></img>
-	</div>
-	<div class="hidden-xs hidden-sm col-md-6">
-	  <p class="paragraph">Hello Alumni! Welcome to the Physics Alumni website where you can connect with fellow Alumni and become a resource for our aspiring majors. Check out the map to see where other Alumni are at the moment!</p>
-	</div>
-      </div>
-    </div>
+    <head>
+      <title>Main Page</title>
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-	<!-- User name -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Name:</label>
-	</div>
-	
-	<!-- User email -->
-	<div id="textBox" class="form-group">
-	  <label for="pwd">Email:</label>
-	</div>
-      </div>
 
-      <div class="col-xs-12 col-md-6">
-	<!-- City and State -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">City:</label>
-	</div>
-	
-	<div id="textBox" class="form-group">
-	  <label for="pwd">State:</label>
-	</div>
-      </div>
-    </div>
       
-    <div class="row">
-      <!-- User gives their majors and minors -->
-    </div>
-    
-    <div class="row">	
-      <div class="col-xs-12 col-md-6">
-	<!-- User Major 1 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Major 1:</label>
-	</div>
+      <!-- Bootstrap script -->    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- <link rel="stylesheet" href="bootStylesheet.css"> -->
+
+      <script>
+
+	$('#myForm').validator();
 	
-	<!-- User Major 2 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Major 2:</label>
-	</div>
-	
-	<!-- User Major 3 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Major 3:</label>
-	</div>	
-      </div>
+      </script>
+
       
-      <div class="col-xs-12 col-md-6">
-	<!-- User Minor 1 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Minor 1:</label>
-	</div>
-	
-	<!-- User Minor 2 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Minor 2:</label>
-	</div>
-	
-	<!-- User Minor 3 -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Minor 3:</label>
-	</div>	
-      </div>
-    </div>
-
-    <div class="row">
-      <p id="space"></p>
-    </div>
+    </head>
     
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-	<!-- User Job Title -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Job Title:</label>
-	</div>
-	<!-- User Workphone -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">Work Phone Number:</label>
-	</div>	
+
+    <form id="myForm" data-toggle="validator" role="form">
+      <div class="form-group">
+	<label for="inputEmail" class="control-label">Email</label>
+	<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+	<div class="help-block with-errors"></div>
       </div>
-
-      <div class="col-xs-12 col-md-6">
-	<!-- User Linkedin Account -->
-	<div id="textBox" class="form-group">
-	  <label for="usr">LinkedIn Account:</label>
-	</div>	
-      </div>
-    </div>
-
-    <div class="row">
-      <p id="space"></p>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-	<!-- Big box for User Input on their Job Description -->
-	<div id="textBox" class="form-group">
-	  <label for="comment">Job Description:</label>
+      <div class="form-group">
+	<label for="inputPassword" class="control-label">Password</label>
+	<div class="form-inline row">
+	  <div class="form-group col-sm-6">
+	    <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+	    <div class="help-block">Minimum of 6 characters</div>
+	  </div>
+	  <div class="form-group col-sm-6">
+	    <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+	    <div class="help-block with-errors"></div>
+	  </div>
 	</div>
       </div>
-
-      <div class="col-xs-12 col-md-6">
-	<!-- Big box for User Input on any Advanced Degrees -->
-	<div id="textBox" class="form-group">
-	  <label for="comment">Advanced Degrees:</label>
+      <div class="form-group">
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="underwear" required>
+	    Boxers
+	  </label>
+	</div>
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="underwear" required>
+	    Briefs
+	  </label>
 	</div>
       </div>
-    </div>
+      <div class="form-group">
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+	    Check yourself
+	  </label>
+	  <div class="help-block with-errors"></div>
+	</div>
+      </div>
+      <div class="form-group">
+	<button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
 
-    <div class="row">
-      <p id="space"></p>
-    </div>
+
     
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-	<!-- Graduation Month -->
-	<div id="GradBox" class="form-group">
-	  <label for="usr">Graduation Month:</label>
-	</div>
-	<!-- Graduation Year -->
-	<div id="GradBox" class="form-group">
-	  <label for="usr">Graduation Year:</label>
-	</div>	
-      </div>
 
-      <div class="col-xs-12 col-md-6">
-      </div>
-    </div>
-
-    <div class="row">
-      <p id="space"></p>
-    </div>
-    
   </body>
 </html>
