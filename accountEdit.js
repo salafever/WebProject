@@ -40,7 +40,45 @@ $(document).ready(function(){
     // });
     
 
- 
+    $.ajax({
+	url: 'getUserInfo.php',
+	type: 'POST',
+
+	success: function(response){
+	    
+	    var newObj = JSON.parse(response);
+	    
+	    console.log(newObj);
+	    
+	    document.getElementById('name').value = newObj['name'][0];
+	    document.getElementById('email').value = newObj['email'][0];
+	    document.getElementById('city').value = newObj['city'][0];
+	    document.getElementById('state').value = newObj['state'][0];
+	    
+	    document.getElementById('ma1').value = newObj['ma1'][0];
+	    document.getElementById('ma2').value = newObj['ma2'][0];
+	    document.getElementById('ma3').value = newObj['ma3'][0];
+	    document.getElementById('mi1').value = newObj['mi1'][0];
+	    document.getElementById('mi2').value = newObj['mi2'][0];
+	    document.getElementById('mi3').value = newObj['mi3'][0];
+	    
+	    document.getElementById('title').value = newObj['title'][0];
+	    document.getElementById('phone').value = newObj['phone'][0];
+	    document.getElementById('linkedin').value = newObj['linkedin'][0];
+	    document.getElementById('desc').value = newObj['desc'][0];
+	    document.getElementById('advanced').value = newObj['advanced'][0];
+
+	    document.getElementById('gradMon').value = newObj['gradMon'][0];
+	    document.getElementById('gradYear').value = newObj['gradYear'][0];
+	    
+
+
+	}
+    });
+
+
+
+    
 
     $("#submitButt").click(function(){
 	//ASSERT: the account update button has been clicked
