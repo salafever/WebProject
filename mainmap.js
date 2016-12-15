@@ -1,3 +1,6 @@
+
+// PRE: The map when the user is on the log in/sign in page, aka the main page. 
+// POST: shows the map without any of the markers, just the map of the US.
 var myMap = function() {
 
     var mapOptions = {
