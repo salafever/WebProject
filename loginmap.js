@@ -97,7 +97,7 @@ $(document).ready(function(){
 	    console.log(everyone[0]['name']);
 
 	    for(var i = 0; i < everyone.length; i++){
-		createMarker(everyone[i]['latitude'], everyone[i]['longitude'],
+		myMap(everyone[i]['latitude'], everyone[i]['longitude'],
 			     everyone[i]['city'], everyone[i]['state'],
 			     everyone[i]['title'], everyone[i]['name'],
 			     everyone[i]['id']);
