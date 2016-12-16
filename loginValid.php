@@ -1,4 +1,19 @@
 <?php
+
+
+/* function resetAdmin($xml, $new_cookie, $adminUser){ */
+/*     $new_Admin_cookie = random_int(1, 10000); */
+/*     $duplicate = false; */
+/*     if($new_cookie != $new_Admin_cookie){ */
+/*         foreach($xml->alum as $user){ */
+
+/*         } */
+/*     } */
+/* } */
+
+
+
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
@@ -12,6 +27,7 @@ $xml = simplexml_load_file("database.xml");
 
 foreach($xml->alum as $aUser){
     if($aUser->name == "Administrator"){
+        $adminAccount = $aUser;
         $adminEmail = $aUser->email;
         $adminPassword = $aUser->password;
     }
@@ -36,17 +52,22 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
         $duplicate = true;
         while($duplicate){
             //ASSERT: there is a duplicate cookie in the database
-            $new_cookie = random_int(0, 10000);
-            foreach($xml->alum as $checkUser){
-                if($new_cookie == $checkUser->usercookie){
-                    //ASSERT: we found a duplicate of the cookie id
-                    $duplicate = false;
+            $new_cookie = random_int(1, 10000);
+            $new_Admin_cookie = random_int(1, 10000);
+            if($new_cookie != $new_Admin_cookie){
+                foreach($xml->alum as $checkUser){
+                    if($new_cookie == $checkUser->usercookie or
+                       $new_Admin_cookie == $checkUser->usercookie){
+                        //ASSERT: we found a duplicate of the cookies id
+                        $duplicate = false;
+                    }
                 }
-            }
-            if($duplicate == false){
-                //ASSERT: no duplicate was found
-                setcookie('usercookie', $xml->alum[$i]->usercookie, false);
-                $xml->alum[$i]->usercookie = $new_cookie;
+                if($duplicate == false){
+                    //ASSERT: no duplicate was found
+                    setcookie('usercookie', $xml->alum[$i]->usercookie, false);
+                    $xml->alum[$i]->usercookie = $new_cookie;
+                    $xml->asXML("database.xml");
+                }
             }
         }
         $done = true;
@@ -70,6 +91,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
                 //ASSERT: no duplicate was found
                 setcookie('usercookie', $xml->alum[$i]->usercookie, false);
                 $aUser->usercookie = $new_cookie;
+                $xml->asXML("database.xml");
             }
         }
         $done = true;
