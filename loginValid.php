@@ -24,14 +24,6 @@ $loginUser = json_decode($_POST['login'], true);
 $inputLogin = $loginUser['login'];
 $inputPass = $loginUser['password'];
 
-/* if(filter_var($inputLogin, FILTER_VALIDATE_EMAIL){ */
-/*     $status = $success; */
-/* } */
-/* else{ */
-/*     echo "Invalid email."; */
-/* } */
-
-
 $done = false;
 //ASSERT: to change if we have a verified user
 for($i = 0; $i < $xml->count() and !$done; $i++){

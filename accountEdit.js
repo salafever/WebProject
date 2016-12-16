@@ -135,6 +135,7 @@ $(document).ready(function(){
 	    }
 	//ASSERT: information placed into a JSON object
 	
+	
 	var updateString = JSON.stringify(updateObject);
 	//ASSERT: the object is converted to a string
 	

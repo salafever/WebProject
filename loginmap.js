@@ -63,8 +63,7 @@ var myMap = function(var aLatitude, var aLongitude, var aCity,
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
     //ASSERT: create a map object
-    
-
+   
     // =======================================================
 
     
@@ -88,3 +87,22 @@ var myMap = function(var aLatitude, var aLongitude, var aCity,
 
     
 }
+
+
+
+$document.ready(function({
+
+    $.ajax({
+	url: 'signupValid.php',
+	data: {'aUser': userString},
+	type: 'POST',
+	success: function(response){
+	    //alert(response);
+	}
+	//ASSERT: http request is made sending over
+	//        the user information
+    });
+    
+
+
+});
