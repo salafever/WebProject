@@ -1,45 +1,24 @@
 TODO:
 
-
 	MAKE SURE ADMINISTRATIVE PAGE ONLY PULLS INFORMATION FROM
 	THE SERVER UNLESS THE COOKIE IS SET AND THAT COOKIE VALUE
 	MATCHES THE VALUE OF THE ADMIN IN THE DATABASE
 
-	NAMESPACES ON EVERY SINGLE JAVASCRIPT FILE. LEAVE NONE ALIVE.
-
 	Destroy cookie when you click log out
-
-MAP:
-
-	Ajax: Name, City, State, User_ID, Job Title
-
 
 Signup page:
 
-       Add a note saying you can't change your name and email after
-       you submit
-
-       Don't let the user sign up unless the fields are correct
        Don't let the user click the button until the box is checked
        Don't let them sign in if a user of the same name exists
-
-       Log them in automatically, take them to the logged in page
-       Button needs to return you to the main page
-
 
 
 Account Settings:
 
-	People sign in with Names and Email. Either they change it on the
-	account or they aren't allowed to change it at all. 
 
 
 MainPage:
 	Have Javascript check if the cookie is set. We can do this through
 	document cookie?
-
-	Redirect to either the mainPage.html if you're logged out,
-	Or to the loggedIn.html if you're logged in
 
 	Redirects to adminpage if they are the admin login/pass
 
@@ -48,15 +27,11 @@ LoggedIn:
 	Have javascript check if a cookie is set to a number currently
 	residing in the database
 	
-	If anyone tries to go to this page using the URL, automatically
-	redirect them to the main page if they aren't logged in
-
 	Have an AJAX call to the database returning all entries including the
 	city, state, name, job title, linkedin
 
 	Place it on the map with Google Maps API, map pointers have links to
 	the person's information
-
 
 InfoPage:
 

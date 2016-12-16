@@ -31,7 +31,7 @@ $(document).ready(function(){
 	    data: {'aUser': userString},
 	    type: 'POST',
 	    success: function(response){
-		//alert(response);
+		alert(response);
 	    }
 	    //ASSERT: http request is made sending over
 	    //        the user information
