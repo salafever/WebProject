@@ -11,22 +11,6 @@ $database = simplexml_load_file("database.xml");
 $foundUser;
 //ASSERT: to store the user we're looking for
 
-/* foreach($database->alum as $anAlum){ */
-/*     if($_POST['cookie'] == true){ */
-/*         $usercookie = $_COOKIE['usercookie']; */
-/*         if($usercookie == $anAlum->usercookie){ */
-/*             $foundUser = $anAlum; */
-/*         } */
-/*     } */
-/*     else if{ */
-/*         if($_POST['name'] == $anAlum->name){ */
-/*             $foundUser = $anAlum; */
-/*             //ASSERT: there's a name that matches in the */
-/*             //        database */
-/*         } */
-/*     } */
-/* } */
-
 
 foreach($database->alum as $anAlum){
     if ($_COOKIE['usercookie'] == $anAlum->usercookie){
@@ -34,25 +18,25 @@ foreach($database->alum as $anAlum){
     }
 }
 
-$name  = $foundUser->name;
-$email = $foundUser->email;
-$city = $foundUser->city;
-$state = $foundUser->state;
-$ma1 = $foundUser->ma1;
-$ma2 = $foundUser->ma2;
-$ma3 = $foundUser->ma3;
-$mi1 = $foundUser->mi1;
-$mi2 = $foundUser->mi2;
-$mi3 = $foundUser->mi3;
+$name  = (string)$foundUser->name;
+$email = (string)$foundUser->email;
+$city = (string)$foundUser->city;
+$state = (string)$foundUser->state;
+$ma1 = (string)$foundUser->ma1;
+$ma2 = (string)$foundUser->ma2;
+$ma3 = (string)$foundUser->ma3;
+$mi1 = (string)$foundUser->mi1;
+$mi2 = (string)$foundUser->mi2;
+$mi3 = (string)$foundUser->mi3;
     
-$title = $foundUser->title;
-$phone = $foundUser->phone;
-$linkedin = $foundUser->linkedin;
-$desc = $foundUser->desc;
-$advanced = $foundUser->advanced;
+$title = (string)$foundUser->title;
+$phone = (string)$foundUser->phone;
+$linkedin = (string)$foundUser->linkedin;
+$desc = (string)$foundUser->desc;
+$advanced = (string)$foundUser->advanced;
     
-$gradMon = $foundUser->gradMon;
-$gradYear = $foundUser->gradYear;
+$gradMon = (string)$foundUser->gradMon;
+$gradYear = (string)$foundUser->gradYear;
 
 
 $user = array(
@@ -78,6 +62,7 @@ $user = array(
     "gradMon" => $gradMon,
     "gradYear" => $gradYear
 );
+
 
 echo json_encode($user);
 
