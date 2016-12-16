@@ -10,10 +10,6 @@ $updatedUser = json_decode($_POST['aUser'], true);
 
 echo $updatedUser['city'];
 
-
-
-
-
 foreach ($database->alum as $anAlum){
     if($_COOKIE['usercookie'] == $anAlum->usercookie && $anAlum->name != "Administrator"){
         //ASSERT: match the user's cookie with the one in the

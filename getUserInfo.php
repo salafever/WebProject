@@ -2,8 +2,15 @@
 
 <?php
 
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 //Kimi Halverson
 //PHP Script to get a user from the database given the name
+
+echo $_COOKIE['usercookie'];
+
 
 $database = simplexml_load_file("database.xml");
 //ASSERT: load up the database
@@ -13,10 +20,13 @@ $foundUser;
 
 
 foreach($database->alum as $anAlum){
-    echo $anAlum->name;
+    echo "xml cookie:";
+    echo $anAlum->usercookie;
+    echo " -- ";
+    echo "online cookie:";
     echo $_COOKIE['usercookie'];
-    if ($_COOKIE['usercookie'] == $anAlum->usercookie){
-        echo "what";
+    if ($_COOKIE['usercookie'] === $anAlum->usercookie){
+        echo "Match?";
         $foundUser = $anAlum;
     }
 }

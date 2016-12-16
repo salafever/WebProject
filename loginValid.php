@@ -61,8 +61,12 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
                 }
                 if($duplicate == false){
                     //ASSERT: no duplicate was found
-                    setcookie('usercookie', $xml->alum[$i]->usercookie, false);
-                    $xml->alum[$i]->usercookie = $new_cookie;
+                    setcookie('usercookie', $new_cookie, false);
+                    echo "cookie: " . $_COOKIE['usercookie'];
+
+                    $xml->alum[$i]->usercookie = $_COOKIE['usercookie'];
+                    echo "database cookie: " . $xml->alum[$i]->usercookie;
+                    
                     $xml->asXML("database.xml");
                 }
             }
@@ -86,7 +90,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
             }
             if($duplicate == false){
                 //ASSERT: no duplicate was found
-                setcookie('usercookie', $xml->alum[$i]->usercookie, false);
+                setcookie('usercookie', $new_cookie, false);
                 $aUser->usercookie = $new_cookie;
                 $xml->asXML("database.xml");
             }
