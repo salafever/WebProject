@@ -12,7 +12,7 @@ var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
       '<h3 id="thirdHeading" class="thirdHeading">var aName</h1>'+
       '<div id="bodyContent">'+
 	'<p value=jobTitle></p>'+ '<p value=aCity + ", " + aState></p>'+
-	'<p><a href="userPage.php">See More Info</a></p>' + 
+	'<p><a href="userPage.html">See More Info</a></p>' + 
       '</div>'+
       '</div>';
     //ASSERT: what is to be in the text box for this marker 
