@@ -14,31 +14,6 @@ namespace.userInformation;
 // }
 
 $(document).ready(function(){
-    //ASSERT: the document loaded so we can populate the
-    //        account
-
-    // console.log(document.cookie);
-    // var currentCookie = getCookie("usercookie");
-    
-
-    // var cookieObject =
-    // 	{
-    // 	    "usercookie": currentCookie
-    // 	}
-    // var cookieString = JSON.stringify(cookieObject);
-    
-    // $.ajax({
-    // 	url: 'getUserInfo.php',
-    // 	data: {'cookie': cookieString},
-    // 	type: 'POST',
-    // 	//ASSERT: http request is made sending over
-    // 	//        the user information
-
-    // 	success: function(response){
-    // 	    console.log(response);
-    // 	}
-    // });
-    
 
     $.ajax({
 	url: 'getUserInfo.php',
