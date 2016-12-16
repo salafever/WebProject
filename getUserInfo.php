@@ -25,7 +25,7 @@ foreach($database->alum as $anAlum){
     echo " -- ";
     echo "online cookie:";
     echo $_COOKIE['usercookie'];
-    if ($_COOKIE['usercookie'] === $anAlum->usercookie){
+    if ($_COOKIE['usercookie'] == $anAlum->usercookie){
         echo "Match?";
         $foundUser = $anAlum;
     }

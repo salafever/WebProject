@@ -1,21 +1,5 @@
+
 <?php
-
-
-/* function resetAdmin($xml, $new_cookie, $adminUser){ */
-/*     $new_Admin_cookie = random_int(1, 10000); */
-/*     $duplicate = false; */
-/*     if($new_cookie != $new_Admin_cookie){ */
-/*         foreach($xml->alum as $user){ */
-
-/*         } */
-/*     } */
-/* } */
-
-
-
-
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
 
 $success = 0;
 $successAdmin = 1;
@@ -62,11 +46,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
                 if($duplicate == false){
                     //ASSERT: no duplicate was found
                     setcookie('usercookie', $new_cookie, false);
-                    echo "cookie: " . $_COOKIE['usercookie'];
-
                     $xml->alum[$i]->usercookie = $_COOKIE['usercookie'];
-                    echo "database cookie: " . $xml->alum[$i]->usercookie;
-                    
                     $xml->asXML("database.xml");
                 }
             }
@@ -81,9 +61,9 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
         $duplicate = true;
         while($duplicate){
             //ASSERT: there is a duplicate cookie in the database
-            $new_cookie = random_int(0, 10000);
+            $other_cookie = random_int(0, 10000);
             foreach($xml->alum as $checkUser){
-                if($new_cookie == $checkUser->usercookie){
+                if($other_cookie == $checkUser->usercookie){
                     //ASSERT: we found a duplicate of the cookie id
                     $duplicate = false;
                 }
