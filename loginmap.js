@@ -9,10 +9,11 @@ var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="thirdHeading" class="thirdHeading">var aName</h1>'+
+      '<h3 id="thirdHeading" class="thirdHeading" innerHTML></h1>'+
       '<div id="bodyContent">'+
-	'<p value=jobTitle></p>'+ '<p value=aCity + ", " + aState></p>'+
-	'<p><a href="userPage.html">See More Info</a></p>' + 
+	'<p innerHTML=jobTitle></p>'+ '<p innerHTML=aCity></p>'+
+	'<p innerHTML=aState></p>' +
+	'<p><a href="userPage.html?id=">See More Info</a></p>' + 
       '</div>'+
       '</div>';
     //ASSERT: what is to be in the text box for this marker 
