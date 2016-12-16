@@ -7,7 +7,7 @@ var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="thirdHeading" class="thirdHeading" value=aName></h1>'+
+      '<h3 id="thirdHeading" class="thirdHeading">var aName</h1>'+
       '<div id="bodyContent">'+
 	'<p value=jobTitle></p>'+ '<p value=aCity + ", " + aState></p>'+
 	'<p><a href="userPage.php">See More Info</a></p>' + 
