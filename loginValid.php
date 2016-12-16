@@ -41,10 +41,13 @@ $inputLogin = $loginUser['login'];
 $inputPass = $loginUser['password'];
 
 $done = false;
+
+/* This is old verification for password just in case */
+/* $inputPass == $xml->alum[$i]->password */
+
 //ASSERT: to change if we have a verified user
 for($i = 0; $i < $xml->count() and !$done; $i++){
-    if($inputLogin == $xml->alum[$i]->email && $inputPass == $xml->alum[$i]->password
-    && $inputLogin != $adminEmail){
+    if($inputLogin == $xml->alum[$i]->email && password_verify($inputPass, $xml->alum[$i]->password) && $inputLogin != $adminEmail){
         //ASSERT: the user/pass is verified
         $duplicate = true;
         while($duplicate){
