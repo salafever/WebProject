@@ -3,8 +3,16 @@
   <alum>
     <name>Administrator</name>
     <email>fleenor@roanoke.edu</email>
-    <password>rcphysics</password>
-    <usercookie>13456</usercookie>
-    <id>0</id>
+    <password>$2y$10$WsCPvrnnukUujxB0w15caevY1sD3xHyrfRXWIypv9Q9sWXGVWV.mG</password>
+    <usercookie>31233</usercookie>
+    <id>6931</id>
   </alum>
-<alum><name>Kimi</name><email>kilhalverson@mail.roanoke.edu</email><password>$2y$10$9I.8KP1p1e6aR/et.lspEeG64CBM9MUXeMp/k4POdJA9wJSphN06y</password><usercookie></usercookie><id>4624</id><city>Salem</city><state>Virginia</state><ma1/><ma2/><ma3/><mi1/><mi2/><mi3/><title/><phone/><linkedin/><desc/><advanced/><gradMon/><gradYear/></alum></database>
+
+  
+  <alum><name>Kimi</name><email>email@roanoke.edu</email><password>$2y$10$WsCPvrnnukUujxB0w15caevY1sD3xHyrfRXWIypv9Q9sWXGVWV.mG</password><usercookie>1234</usercookie><id>2370</id><city> </city><state> </state><ma1> </ma1><ma2> </ma2><ma3> </ma3><mi1> </mi1><mi2> </mi2><mi3> </mi3><title> </title><phone> </phone><linkedin> </linkedin><desc> </desc><advanced> </advanced><gradMon> </gradMon><gradYear>2017</gradYear></alum>
+
+  <alum><name>Steph</name><email>steph@roanoke.edu</email><password>$2y$10$WsCPvrnnukUujxB0w15caevY1sD3xHyrfRXWIypv9Q9sWXGVWV.mG</password><usercookie>1929</usercookie><id>2370</id><city> </city><state> </state><ma1> </ma1><ma2> </ma2><ma3> </ma3><mi1> </mi1><mi2> </mi2><mi3> </mi3><title> </title><phone> </phone><linkedin> </linkedin><desc> </desc><advanced> </advanced><gradMon> </gradMon><gradYear>2016</gradYear></alum>
+
+
+
+</database>

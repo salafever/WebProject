@@ -20,7 +20,6 @@ foreach($xml->alum as $aUser){
 
 $loginUser = json_decode($_POST['login'], true);
 //ASSERT: get the user information from the client
-
 $inputLogin = $loginUser['login'];
 $inputPass = $loginUser['password'];
 
