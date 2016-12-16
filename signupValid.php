@@ -14,8 +14,11 @@ $signupUser = json_decode($_POST['aUser'], true);
 
 $name = $signupUser['name'];
 $email = $signupUser['email'];
-$password  = $signupUser['password'];
+$unhashedPassword  = $signupUser['password'];
 //ASSERT: gather data from form fields
+
+$password = password_hash($unhashedPassword, PASSWORD_DEFAULT);
+//ASSERT: hashing the password so that it is more secure
 
 $xml = simplexml_load_file("database.xml");
 $newAlum = $xml->addChild('alum');
