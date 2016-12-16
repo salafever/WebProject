@@ -27,7 +27,8 @@ if(isset($_COOKIE['usercookie'])){
             if($user->name != "Administrator"){
                 $newUser = array(
                     "name"=>(string)$user->name,
-                    "gradYear"=>(string)$user->gradYear
+                    "gradYear"=>(string)$user->gradYear,
+                    //"id" =>(string)$user->id
                 );
                 $userArray[] = $newUser;
             }

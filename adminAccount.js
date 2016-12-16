@@ -21,49 +21,37 @@ $(document).ready(function(){
 		window.location.href = 'loggedIn.html';
 	    }
 	    else{
-		//continue
-		console.log('welcome to the admin page');
-
-
+		
 		var list = JSON.parse(response);
-
 		var yearList = [];
 
 		for(var i = 0; i < list.length; i++){
+		    //ASSERT: grab all years without duplication
 		    if(yearList.indexOf(list[i]['gradYear']) == -1){
 			yearList.push(list[i]['gradYear']);
 		    }
 		}
 
-		console.log(yearList);
-
-
 		for(var i = 0; i < yearList.length; i++){
-		    $("#container").append("<div id='class" + yearList[i] + " class='panel-heading panelHead'></div>");
+		    //ASSERT: iterate and append the proper year containers without duplication
+		    $("#container").append("<div id='class" + yearList[i] + "' class='panel-heading panelHead'></div>");
 		    $("#container").append("<div id='"+ yearList[i] +"' class='panel-body panelBody'></div>");
 		}
 
-
-
-
-
-
-
-
-
-
+		for(var i = 0; i< yearList.length; i++){
+		    //ASSERT: append the name of the class to the year divs
+		    $("#class"+yearList[i]).append("<p>Class of " + yearList[i] + "</p>");
+		}
 		
+		for(var i = 0; i < list.length; i++){
+		    //ASSERT: get each name and append to the corresponding year divs
+		    var year = list[i]['gradYear'];
+		    var id = list[i]['id'];
+		    var name = list[i]['name'];
+		    $("#" + year).append("<a href='userPage.html=?id='" + id + "'>" + name + "</a>");
+		    $("#" + year).append("</br>");
+		}	
 	    }
 	}
-	//ASSERT: http request is made sending over
-	//        the user information
     });
-
-
-
-
-
-
-
-    
 });
