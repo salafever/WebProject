@@ -51,8 +51,7 @@ $(document).ready(function(){
 	    window.location.href = 'mainPage.html';
 	    console.log("Invalid");
 	}
-
-  
+	
 
     });
 
