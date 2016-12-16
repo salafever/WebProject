@@ -4,8 +4,8 @@
 //       of one given entry/person.
 // POST: creates the marker on the map for the person given and creates the
 //        box for the individual. 
-var createMarker = function (var aLatitude, var aLongitude, var aCity,
-			     var aState, var jobTitle, var aName, var nameID) {
+var createMarker = function (aLatitude, aLongitude, aCity, aState, jobTitle,
+			     aName, nameID) {
 
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
@@ -40,7 +40,8 @@ var createMarker = function (var aLatitude, var aLongitude, var aCity,
 
 // PRE: The map function was called inside the html pages.
 // POST: creates the map with all of the markers on the map created. 
-var myMap = function() {
+var myMap = function(var aLatitude, var aLongitude, var aCity,
+		     var aState, var jobTitle, var aName, var nameID) {
 
     var mapOptions = {
         zoom: 4,
