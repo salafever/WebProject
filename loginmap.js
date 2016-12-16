@@ -1,3 +1,45 @@
+// The Map Functionality
+
+// PRE: takes the latitude, longitude, city, state, job title, name, and nameID
+//       of one given entry/person.
+// POST: creates the marker on the map for the person given and creates the
+//        box for the individual. 
+var createMarker = function (var aLatitude, var aLongitude, var aCity,
+			     var aState, var jobTitle, var aName, var nameID) {
+
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">aName</h1>'+
+      '<div id="bodyContent">'+
+	'<p>jobTitle</p>'+ '<p>aCity + ", " + aState</p>'+
+	'<p><a href="userPage.php">See More Info</a></p>' + 
+      '</div>'+
+      '</div>';
+    //ASSERT: what is to be in the text box for this marker 
+
+    var myLatlng = new google.maps.LatLng(aLatitude, aLongitude); 
+    //ASSERT: creates the lat and long for the marker
+    
+    var marker = new google.maps.Marker({
+	position: myLatlng,
+    });
+    //ASSERT: creates the marker for the given parameters latitude and longitude
+    
+    var infowindow = new google.maps.InfoWindow({
+	content: contentString
+    });
+    //ASSERT: creates the actual text box for the marker
+
+    marker.addListener('click', function() {
+	infowindow.open(map, marker);
+    });
+    //ASSERT: makes it capable to click on the marker to see text box
+    
+}
+
+// PRE: The map function was called inside the html pages.
+// POST: creates the map with all of the markers on the map created. 
 var myMap = function() {
 
     var mapOptions = {
@@ -20,33 +62,11 @@ var myMap = function() {
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
     //ASSERT: create a map object
-
-
-    var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<p>BLAH BLAH BLAH</p>'+
-      '</div>'+
-      '</div>';
-
-
-    var myLatlng = new google.maps.LatLng(37.3860517, -122.0838511); 
     
-    var marker = new google.maps.Marker({
-	position: myLatlng,
-	title:"Hello World!"
-    });
 
-    var infowindow = new google.maps.InfoWindow({
-	content: contentString
-    });
+    // =======================================================
 
-    marker.addListener('click', function() {
-	infowindow.open(map, marker);
-    });
-
+    
     //Use Javascript to make an AJAX call to PHP asking for the
     //cities and states of everyone in the database
 
@@ -59,8 +79,8 @@ var myMap = function() {
 
     //Convert to latitude and longitude
     //Place marker on the map.
-
-    //Use a for loop
+    
+    //Use a for loop, using the function createMarker function
     
     // To add the marker to the map, call setMap();
     marker.setMap(map);
