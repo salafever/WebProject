@@ -5,15 +5,14 @@
 // POST: creates a single marker to put onto the map.
 var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
 			    aName, nameID, map) {
-
+    
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="thirdHeading" class="thirdHeading" innerHTML></h1>'+
+      '<h3 id="thirdHeading" class="thirdHeading">' + aName '</h1>' +
       '<div id="bodyContent">'+
-	'<p innerHTML=jobTitle></p>'+ '<p innerHTML=aCity></p>'+
-	'<p innerHTML=aState></p>' +
-	'<p><a href="userPage.html?id=">See More Info</a></p>' + 
+	'<p>' + jobTitle + '</p>'+ '<p>' + aCity + ', ' + aState + '</p>'+
+	'<p><a href="userPage.html?id="' + nameID + '>See More Info</a></p>' + 
       '</div>'+
       '</div>';
     //ASSERT: what is to be in the text box for this marker 
