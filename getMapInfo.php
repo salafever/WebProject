@@ -13,8 +13,6 @@ $userArray = array();
 
 foreach($xml->alum as $user){
     if($user->name != "Administrator"){
-        echo $user->name;
-
     
         $city = $user->city;
         $state = $user->state;
@@ -35,7 +33,8 @@ foreach($xml->alum as $user){
             "city" => (string)$user->city,
             "state" => (string)$user->state,
             "title"=> (string)$user->title,
-
+            "id" => (string)$user->id,
+            
             "latitude" => $lat,
             "longitude" => $long
         );
@@ -44,11 +43,6 @@ foreach($xml->alum as $user){
     }
 }
 
-print_r($userArray);
-
-$city = "Salem";
-$state = "Virginia";
-
-
+echo json_encode($userArray);
 
 ?>

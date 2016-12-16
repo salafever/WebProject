@@ -29,9 +29,7 @@ Signup page:
 
 
 Account Settings:
-	Have javascript send TRUE for the cookie, we're checking for cookies
-	Push the update account button, take everything in the fields and update
-	the database with it
+
 	People sign in with Names and Email. Either they change it on the
 	account or they aren't allowed to change it at all. 
 

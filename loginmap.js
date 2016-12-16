@@ -40,8 +40,8 @@ var createMarker = function (aLatitude, aLongitude, aCity, aState, jobTitle,
 
 // PRE: The map function was called inside the html pages.
 // POST: creates the map with all of the markers on the map created. 
-var myMap = function(var aLatitude, var aLongitude, var aCity,
-		     var aState, var jobTitle, var aName, var nameID) {
+var myMap = function(aLatitude, aLongitude,  aCity,
+		      aState, jobTitle, aName, nameID) {
 
     var mapOptions = {
         zoom: 4,
@@ -90,14 +90,25 @@ var myMap = function(var aLatitude, var aLongitude, var aCity,
 
 
 
-$document.ready(function({
-
+$(document).ready(function(){   
     $.ajax({
-	url: 'signupValid.php',
-	data: {'aUser': userString},
+	url: 'getMapInfo.php',
 	type: 'POST',
 	success: function(response){
-	    //alert(response);
+
+	    var everyone = JSON.parse(response);
+	    console.log(everyone);
+
+	    console.log(everyone[0]['name']);
+
+	    for(var i = 0; i < everyone.length; i++){
+		createMarker(everyone[i]['latitude'], everyone[i]['longitude'],
+			     everyone[i]['city'], everyone[i]['state'],
+			     everyone[i]['title'], everyone[i]['name'],
+			     everyone[i]['id']);
+	    }
+
+
 	}
 	//ASSERT: http request is made sending over
 	//        the user information
