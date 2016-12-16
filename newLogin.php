@@ -63,7 +63,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
     }
     else{
         //ASSERT: the user is the administrator
-        if($inputLogin == $adminEmail && $inputPass == $adminPassword){
+        if($inputLogin == $adminEmail && password_verify($inputPass, $xml->alum[$i]->password)){
             $status = 1;
             $done = true;
         }
