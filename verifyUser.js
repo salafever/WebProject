@@ -6,10 +6,14 @@ $(document).ready(function(){
 	url: 'checkAllUsers.php',
 	type: 'POST',
 	success: function(response){
-	    //ASSERT: the cookie was cleared for the user
 	    console.log(response);
 
-
+	    if(response == 0){
+		window.location.href = 'mainPage.html';
+	    }
+	    else if(response == 2){
+		window.location.href = 'adminPage.html';
+	    }
 
 	}
     });
