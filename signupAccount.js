@@ -39,9 +39,10 @@ $(document).ready(function(){
 		//        the user information
 	    });
 
-	    if (namespace.response == namespace.success) {
-		window.location.href = 'loggedIn.html';
-	    }
+	    window.location.href = 'mainPage.html';
+	    // if (namespace.response == namespace.success) {
+	    // 	window.location.href = 'mainPage.html';
+	    // }
 	}
 	else {
 	    alert("Please check disclaimer.");
