@@ -1,3 +1,7 @@
+
+FIX THE COOKIE PROBLEM
+================
+
 TODO:
 
 	MAKE SURE ADMINISTRATIVE PAGE ONLY PULLS INFORMATION FROM
@@ -40,8 +44,6 @@ InfoPage:
 	for viewing.
 	
 AdminPage:
-
-	Use AJAX to get all of the names and years organized
 
 	Take the years and create appropriate divs for those years. Once that
 	is done...

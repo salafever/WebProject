@@ -1,21 +1,48 @@
 
-
 <?php
+
+//Grab information for administrator page
+//Kimi Halverson
+
+$_COOKIE['usercookie'] = 31233;
+
 
 $xml = simplexml_load_file("database.xml");
 //ASSERT: get the database
 
-
-$userArray = array();
+$admincookie;
 foreach($xml->alum as $user){
-    if($user->name!= "Administrator"){
-        $newUser = array(
-            "name" => (string)$user->name;
-            "gradYear"=> (string)$user->gradYear;
-        );
+    if($user->name == "Administrator"){
+        //ASSERT: we found the administrator
+        $admincookie = $user->usercookie;
     }
 }
 
-echo json_encode($userArray);
+$currentcookie = $_COOKIE['usercookie'];
+$userArray = array();
+if(isset($_COOKIE['usercookie'])){
+    if($admincookie == $currentcookie){
+        //ASSERT: we're logged in as the admin
+        foreach($xml->alum as $user){
+            if($user->name != "Administrator"){
+                $newUser = array(
+                    "name"=>(string)$user->name,
+                    "gradYear"=>(string)$user->gradYear
+                );
+                $userArray[] = $newUser;
+            }
+        }
+        echo json_encode($userArray);
+    }
+    else{
+        //ASSERT: we're logged in, just not as the user
+        echo 1;
+    }
+}
+else{
+    //ASSERT: we're not logged in at all
+    echo 0;
+}
+
 
 ?>

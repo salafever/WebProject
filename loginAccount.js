@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 	var userString = JSON.stringify(userObject);
 	$.ajax({
-	    url: 'loginValid.php',
+	    url: 'newLogin.php',
 	    data: {'login': userString},
 	    type: 'POST',
 	    success: function(response){
