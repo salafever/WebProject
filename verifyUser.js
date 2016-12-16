@@ -3,14 +3,14 @@
 
 $(document).ready(function(){
     $.ajax({
-	url: 'clearCookie.php',
+	url: 'checkAllUsers.php',
 	type: 'POST',
 	success: function(response){
 	    //ASSERT: the cookie was cleared for the user
-	    
+	    console.log(response);
 
 
-	    window.location.href = 'mainPage.html';
+
 	}
     });
 });
