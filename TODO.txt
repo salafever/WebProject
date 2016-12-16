@@ -22,8 +22,6 @@ MainPage:
 	Have Javascript check if the cookie is set. We can do this through
 	document cookie?
 
-	Redirects to adminpage if they are the admin login/pass
-
 LoggedIn:
 
 	Have javascript check if a cookie is set to a number currently
