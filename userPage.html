@@ -1,82 +1,301 @@
 <!DOCTYPE html>
 <html>
-  <body>
 
-    <head>
-      <title>Main Page</title>
-      <!-- jQuery CDN -->
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-      <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-
-
-      
-      <!-- Bootstrap script -->    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- <link rel="stylesheet" href="bootStylesheet.css"> -->
-
-      <script>
-
-	$('#myForm').validator();
-	
-      </script>
-
-      
+  <head>
+    <title>User Info</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    
+    <!-- Bootstrap script -->    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootStylesheet.css">
+    
     </head>
     
+  <body>
 
-    <form id="myForm" data-toggle="validator" role="form">
-      <div class="form-group">
-	<label for="inputEmail" class="control-label">Email</label>
-	<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
-	<div class="help-block with-errors"></div>
-      </div>
-      <div class="form-group">
-	<label for="inputPassword" class="control-label">Password</label>
-	<div class="form-inline row">
-	  <div class="form-group col-sm-6">
-	    <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-	    <div class="help-block">Minimum of 6 characters</div>
-	  </div>
-	  <div class="form-group col-sm-6">
-	    <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
-	    <div class="help-block with-errors"></div>
-	  </div>
+    <!-- NAVBAR -->    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Welcome!</a>
+	</div>
+	
+	<!-- Collapsing the Navbar -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <form id="signin" class="navbar-form navbar-right" role="form">
+	    
+	    <!-- Buttons and Submitting -->
+            <button type="button" class="btn buttonFeat" onClick="buttonNamespace.toLoggedIn()">Back</button>
+          </form>
 	</div>
       </div>
-      <div class="form-group">
-	<div class="radio">
-	  <label>
-	    <input type="radio" name="underwear" required>
-	    Boxers
-	  </label>
-	</div>
-	<div class="radio">
-	  <label>
-	    <input type="radio" name="underwear" required>
-	    Briefs
-	  </label>
-	</div>
-      </div>
-      <div class="form-group">
-	<div class="checkbox">
-	  <label>
-	    <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
-	    Check yourself
-	  </label>
-	  <div class="help-block with-errors"></div>
-	</div>
-      </div>
-      <div class="form-group">
-	<button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-      </form>
+    </nav>
 
+    <!-- Header -->
+    <!-- Grid row - 2 columns-->
+    <div id="header" >
+      <div class="row">
+  	<div class="col-xs-12 col-md-6" >
+  	  <img class="img-responsive" id="theLogo" src="logo.png" style="display:inline"></img>
+  	</div>
+  	<div class="hidden-xs hidden-sm col-md-6">
+  	  <p class="paragraph">Hello Alumni! Welcome to the Physics Alumni website where you can connect with fellow Alumni and become a resource for our aspiring majors. Check out the map to see where other Alumni are at the moment!</p>
+  	</div>
+      </div>
+    </div>
 
     
+    <div class="container">
+      <h2 style="color:white">Name</h2>
+      <table style="color:white" class="table">
+	<thead>
+	  <tr>
+          </tr>
+	</thead>
+	<tbody>
+	  <tr>
+            <td>Email:</td>
+            <td>john@example.com</td>
 
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+            <td>City:</td>
+            <td>Salem</td>
+	    
+            <td>State:</td>
+            <td>Virginia</td>
+	  </tr>
+	  <tr>
+	    <td>Major 1:</td>
+            <td>Computer Science</td>
+	    
+            <td>Minor 1:</td>
+            <td>Mathematics</td>
+	  </tr>
+	  <tr>
+	    <td>Major 2:</td>
+            <td>Physics</td>
+	    
+            <td>Minor 2:</td>
+            <td></td>
+	  </tr>
+	  <tr>
+	    <td>Major 3:</td>
+            <td></td>
+	    
+            <td>Minor 3:</td>
+            <td></td>
+	  </tr>
+	  <tr>
+	    <td>Job Title:</td>
+            <td>Software Engineer</td>
+	    
+            <td>Work phone:</td>
+            <td>540-555-5555</td>
+	  </tr>
+	  <tr>
+	    <td>LinkedIn:</td>
+            <td>www.linkedin.com/kimistephanie</td>
+	    
+            <td></td>
+            <td></td>
+	  </tr>
+	  <tr>
+	    <td>Graduation Month:</td>
+            <td>May</td>
+	    
+            <td>Graduation Year:</td>
+            <td>2016</td>
+	  </tr>
+	</tbody>
+      </table>
+      
+      <table style="color:white" class="table">
+	<tbody>	  
+	  <tr>
+	    <td>Job Description:</td>
+            <td>This is a lot of words to describe the job that I am currently in then this is amazing also I am losing my mind.</td>
+	  </tr>
+	  <tr>
+	    <td>Advanced Degrees:</td>
+	    <td>This is a lot of words to describe the job that I am currently in then this is amazing also I am losing my mind.</td>
+	  </tr>
+	</tbody>
+	
+      </table>
+    </div>
+    
+    
+    
+
+  <!--   <div class="row"> -->
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- User name -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Name:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="name" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<\!-- User email -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="pwd">Email:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="email" readonly="readonly"> -->
+  <!-- 	</div> -->
+  <!--     </div> -->
+
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- City and State -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">City:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="city" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="pwd">State:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="state" readonly="readonly"> -->
+  <!-- 	</div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+      
+  <!--   <div class="row"> -->
+  <!--     <\!-- User gives their majors and minors -\-> -->
+  <!--     <p id="question">What were the majors and minors that you graduated with at Roanoke College?</p> -->
+  <!--   </div> -->
+    
+  <!--   <div class="row">	 -->
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- User Major 1 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Major 1:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="ma1" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<\!-- User Major 2 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Major 2:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="ma2" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<\!-- User Major 3 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Major 3:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="ma3" readonly="readonly"> -->
+  <!-- 	</div>	 -->
+  <!--     </div> -->
+      
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- User Minor 1 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Minor 1:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="mi1" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<\!-- User Minor 2 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Minor 2:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="mi2" readonly="readonly"> -->
+  <!-- 	</div> -->
+	
+  <!-- 	<\!-- User Minor 3 -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Minor 3:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="mi3" readonly="readonly"> -->
+  <!-- 	</div>	 -->
+  <!--     </div> -->
+  <!--   </div> -->
+
+  <!--   <div class="row"> -->
+  <!--     <p id="space"></p> -->
+  <!--   </div> -->
+    
+  <!--   <div class="row"> -->
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- User Job Title -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Job Title:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="title" readonly="readonly"> -->
+  <!-- 	</div> -->
+  <!-- 	<\!-- User Workphone -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Work Phone Number:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="phone" readonly="readonly"> -->
+  <!-- 	</div>	 -->
+  <!--     </div> -->
+
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- User Linkedin Account -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="usr">LinkedIn Account:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="linkedin" readonly="readonly"> -->
+  <!-- 	</div>	 -->
+  <!--     </div> -->
+  <!--   </div> -->
+
+  <!--   <div class="row"> -->
+  <!--     <p id="space"></p> -->
+  <!--   </div> -->
+
+  <!--   <div class="row"> -->
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- Big box for User Input on their Job Description -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="comment">Job Description:</label> -->
+  <!-- 	  <textarea class="form-control" rows="5" id="desc" readonly="readonly"></textarea> -->
+  <!-- 	</div> -->
+  <!--     </div> -->
+
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- Big box for User Input on any Advanced Degrees -\-> -->
+  <!-- 	<div id="textBox" class="form-group"> -->
+  <!-- 	  <label for="comment">Advanced Degrees:</label> -->
+  <!-- 	  <textarea class="form-control" rows="5" id="advanced" readonly="readonly"></textarea> -->
+  <!-- 	</div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+
+  <!--   <div class="row"> -->
+  <!--     <p id="space"></p> -->
+  <!--   </div> -->
+    
+  <!--   <div class="row"> -->
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!-- 	<\!-- Graduation Month -\-> -->
+  <!-- 	<div id="GradBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Graduation Month:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="gradMon" readonly="readonly"> -->
+  <!-- 	</div> -->
+  <!-- 	<\!-- Graduation Year -\-> -->
+  <!-- 	<div id="GradBox" class="form-group"> -->
+  <!-- 	  <label for="usr">Graduation Year:</label> -->
+  <!-- 	  <input type="text" class="form-control" id="gradYear" readonly="readonly"> -->
+  <!-- 	</div>	 -->
+  <!--     </div> -->
+
+  <!--     <div class="col-xs-12 col-md-6"> -->
+  <!--     </div> -->
+  <!--   </div> -->
+    
+  <!--   <div class="row"> -->
+  <!--     <p id="space"></p> -->
+  <!--   </div> -->
+    
   </body>
+
+  <script src="buttons.js"></script>
+  <script src="accountEdit.js"></script>
+  
 </html>
