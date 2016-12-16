@@ -13,7 +13,10 @@ $foundUser;
 
 
 foreach($database->alum as $anAlum){
+    echo $anAlum->name;
+    echo $_COOKIE['usercookie'];
     if ($_COOKIE['usercookie'] == $anAlum->usercookie){
+        echo "what";
         $foundUser = $anAlum;
     }
 }
