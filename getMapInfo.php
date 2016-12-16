@@ -17,10 +17,9 @@ foreach($xml->alum as $user){
         $city = $user->city;
         $state = $user->state;
 
-        $location = urlencode($city . " " . $state);
-
-        
+        $location = urlencode($city . " " . $state);        
         $json_map = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$location."&key=AIzaSyBk1nN7imlVJ6Y_HVB3RThyCpBkl0e78nc");
+        //ASSERT: make a geocode request for the coordinates
         
         $map_info= json_decode($json_map, true);
         $lat = $map_info['results'][0]['geometry']['location']['lat'];
@@ -29,6 +28,7 @@ foreach($xml->alum as $user){
         //        file that we parse to get the latitude and longitude
 
         $newUser = array(
+            //ASSERT: place into an array
             "name" => (string)$user->name,
             "city" => (string)$user->city,
             "state" => (string)$user->state,

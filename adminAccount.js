@@ -4,8 +4,6 @@
 
 $(document).ready(function(){
 
-    console.log(document.cookie);
-
     $.ajax({
 	url: 'getForAdmin.php',
 	type: 'POST', 

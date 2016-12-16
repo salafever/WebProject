@@ -1,21 +1,24 @@
 
+
+//Script to let the user/admin see the information
+//Kimi Halverson
+
 $(document).ready(function(){
 
     var url = window.location.href;
     var id = url.substring(url.indexOf("=") + 1);
-
+    //get the id from the url
+    
     $.ajax({
 	url: 'getInfo.php',
 	data: {'id': id},
 	type: 'POST',
+	//send an ajax request
 
 	success: function(response){
-
+	    //populate the html with the info
+	    
 	    var newObj = JSON.parse(response);
-
-	    console.log(newObj);
-
-	    console.log(newObj['name']);
 	    
 	    document.getElementById('name').innerHTML = newObj['name'];
 	    document.getElementById('email').innerHTML = newObj['email'];

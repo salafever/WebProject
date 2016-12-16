@@ -23,7 +23,7 @@ if(isset($_COOKIE['usercookie'])){
         $status = $isadmin;
     }
     else{
-        $status = $success;
+        $status = $loggedin;
     }
 }
 else{

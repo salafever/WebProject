@@ -6,7 +6,6 @@ $(document).ready(function(){
 	url: 'checkAllUsers.php',
 	type: 'POST',
 	success: function(response){
-	    console.log(response);
 
 	    if(response == 0){
 		window.location.href = 'mainPage.html';

@@ -4,8 +4,6 @@
 //Grab information for administrator page
 //Kimi Halverson
 
-$_COOKIE['usercookie'] = 31233;
-
 
 $xml = simplexml_load_file("database.xml");
 //ASSERT: get the database

@@ -31,7 +31,6 @@ $(document).ready(function(){
 	    data: {'login': userString},
 	    type: 'POST',
 	    success: function(response){
-		console.log(response);
 
 		//ASSERT: we got a successful response that we store
 		namespace.response = response;
@@ -39,7 +38,6 @@ $(document).ready(function(){
 	});
 
 	if(namespace.response == namespace.success){
-	    console.log("verified");
 	    //ASSERT: the user was verified
 	    window.location.href = 'loggedIn.html';
 	}
@@ -50,7 +48,7 @@ $(document).ready(function(){
 	else if(namespace.response == namespace.failure){
 	    //ASSERT: the user was unverified
 	    window.location.href = 'mainPage.html';
-	    console.log("Invalid");
+
 	}
 	
 
