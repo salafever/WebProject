@@ -27,9 +27,21 @@ $(document).ready(function(){
 
 		var list = JSON.parse(response);
 
-		
+		var yearList = [];
+
+		for(var i = 0; i < list.length; i++){
+		    if(yearList.indexOf(list[i]['gradYear']) == -1){
+			yearList.push(list[i]['gradYear']);
+		    }
+		}
+
+		console.log(yearList);
 
 
+		for(var i = 0; i < yearList.length; i++){
+		    $("#container").append("<div id='class" + yearList[i] + " class='panel-heading panelHead'></div>");
+		    $("#container").append("<div id='"+ yearList[i] +"' class='panel-body panelBody'></div>");
+		}
 
 
 
