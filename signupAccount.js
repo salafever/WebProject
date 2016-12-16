@@ -1,19 +1,17 @@
-
 var namespace = {};
-namespace.success = 0;
+namespace.success = "\n0";
 namespace.response;
 
-//Author: Kimi Halverson
 //Sign up Validation
 
 $(document).ready(function(){
     
-    $("#submitButt").click(function(){
+    $("#submitButt").on('click',function(){
 	//ASSERT: the sign up button has been clicked
 
 	var checkedBox = document.getElementById("theCheckbox").checked;
 	
-	if (true) { 
+	if (checkedBox) {
 	    var name = document.getElementById("name").value;
 	    var email = document.getElementById("email").value;
 	    var password = document.getElementById("password").value;
@@ -35,7 +33,6 @@ $(document).ready(function(){
 		data: {'aUser': userString},
 		type: 'POST',
 		success: function(response){
-		    //alert(response);
 		    namespace.response = response;
 		}
 		//ASSERT: http request is made sending over

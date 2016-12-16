@@ -1,5 +1,6 @@
-
 <?php
+
+$status = 0;
 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -71,6 +72,8 @@ else {
     $xml->asXML("database.xml");
 //ASSERT: add information to the database
 
+    echo $status;
+    
 }
 
 ?>
