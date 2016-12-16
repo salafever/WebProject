@@ -11,8 +11,8 @@ namespace.response;
 
 
 $(document).ready(function(){
-    $("#loginButton").click(function(){
-	
+    
+    $("#loginButton").on('click', function(){	
 	var login = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
 	//ASSERT: take the username and password from the
@@ -39,6 +39,7 @@ $(document).ready(function(){
 	});
 
 	if(namespace.response == namespace.success){
+	    console.log("verified");
 	    //ASSERT: the user was verified
 	    window.location.href = 'loggedIn.html';
 	}

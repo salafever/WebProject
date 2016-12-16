@@ -2,10 +2,6 @@ FIX THE COOKIE PROBLEM
 
 TODO:
 
-	MAKE SURE ADMINISTRATIVE PAGE ONLY PULLS INFORMATION FROM
-	THE SERVER UNLESS THE COOKIE IS SET AND THAT COOKIE VALUE
-	MATCHES THE VALUE OF THE ADMIN IN THE DATABASE
-
 	Destroy cookie when you click log out
 
 Signup page:
@@ -19,10 +15,11 @@ Account Settings:
 
 
 MainPage:
-	Have Javascript check if the cookie is set. We can do this through
-	document cookie?
 
 LoggedIn:
+
+	Have Javascript check if the cookie is set. We can do this through
+	document cookie?
 
 	Have javascript check if a cookie is set to a number currently
 	residing in the database
@@ -40,10 +37,3 @@ InfoPage:
 	for viewing.
 	
 AdminPage:
-
-	Take the years and create appropriate divs for those years. Once that
-	is done...
-
-	Put the correct names under those years. Each of those names have
-	links to INFOPAGE.html
-	

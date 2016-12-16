@@ -48,7 +48,8 @@ $(document).ready(function(){
 		    var year = list[i]['gradYear'];
 		    var id = list[i]['id'];
 		    var name = list[i]['name'];
-		    $("#" + year).append("<a href='userPage.html=?id='" + id + "'>" + name + "</a>");
+		    console.log(id);
+		    $("#" + year).append("<a href='userPage.html?id=" + id + "'>" + name + "</a>");
 		    $("#" + year).append("</br>");
 		}	
 	    }

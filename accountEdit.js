@@ -5,14 +5,6 @@
 namespace = {};
 namespace.userInformation;
 
-//PRE: name is the name of the cookie we want
-//POST:
-// var getCookie = function(name){
-//     var re = new RegExp(name + "=([^;]+)");
-//     var value = re.exec(document.cookie);
-//     return (value != null) ? unescape(value[1]) : null;
-// }
-
 $(document).ready(function(){
 
     $.ajax({
@@ -20,12 +12,12 @@ $(document).ready(function(){
 	type: 'POST',
 
 	success: function(response){
-	    
-	    console.log(response);
+	     
 	    var newObj = JSON.parse(response);
-	    
+
+	    console.log("yo");
 	    console.log(newObj);
-	    
+	    	    
 	    document.getElementById('name').value = newObj['name'];
 	    document.getElementById('email').value = newObj['email'];
 	    document.getElementById('city').value = newObj['city'];
@@ -46,15 +38,10 @@ $(document).ready(function(){
 
 	    document.getElementById('gradMon').value = newObj['gradMon'];
 	    document.getElementById('gradYear').value = newObj['gradYear'];
-	    
-
-
+	   
 	}
     });
 
-
-
-    
 
     $("#updateAccSett").click(function(){
 	//ASSERT: the account update button has been clicked
@@ -121,7 +108,7 @@ $(document).ready(function(){
 	    //ASSERT: http request is made sending over
 	    //        the user information
 	    success: function(Aresponse){
-		console.log(Aresponse);
+		window.location.href = 'accountSettings.html';
 	    }
 	});
 	
