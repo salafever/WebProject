@@ -86,11 +86,21 @@ body{
 }
 
 /* This is an ID that is used for any submit buttons. This is used in the 
-   Account Settings and the SignUp page. */
+   the SignUp page. */
 #submitButt {
     background-color: #70132d; 
     color: white;
     border-color: #333132;
+    margin-top: 50px;
+}
+
+/* This is an ID that is used for any submit buttons. This is used in the 
+   the Account Settings page. */
+#updateAccSett {
+    background-color: #70132d; 
+    color: white;
+    border-color: #333132;
+    margin-left: 55px;
     margin-top: 50px;
 }
 
