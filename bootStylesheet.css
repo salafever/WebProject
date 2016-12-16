@@ -140,3 +140,17 @@ body{
     margin-top: 50px;
     margin-left: 100px;
 }
+
+/* This is an class that is used for all of the years in the Admin Page */
+.panelDiv {
+    width: 50% !important;
+    margin-left: 25% !important;
+    
+}
+
+/* This is an class that is used for all of the names in the Admin Page */
+.panelBody {
+    width: 50% !important;
+    
+}
+
