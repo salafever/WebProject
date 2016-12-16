@@ -29,30 +29,30 @@ $newAlum->addChild('id', $user_id);
 //        cookie. Also is the id of the user.
 
 
-$newAlum->addChild('city', "");
-$newAlum->addChild('state', "");
+$newAlum->addChild('city', " ");
+$newAlum->addChild('state', " ");
 //ASSERT: city and state for the coordinates of each user
 
-$newAlum->addChild('ma1', "");
-$newAlum->addChild('ma2', "");
-$newAlum->addChild('ma3', "");
-$newAlum->addChild('mi1', "");
-$newAlum->addChild('mi2', "");
-$newAlum->addChild('mi3', "");
+$newAlum->addChild('ma1', " ");
+$newAlum->addChild('ma2', " ");
+$newAlum->addChild('ma3', " ");
+$newAlum->addChild('mi1', " ");
+$newAlum->addChild('mi2', " ");
+$newAlum->addChild('mi3', " ");
 //ASSERT: the majors and minors of the user
 
 
-$newAlum->addChild("title", "");
-$newAlum->addChild("phone", "");
-$newAlum->addChild("linkedin", "");
-$newAlum->addChild("desc", "");
-$newAlum->addChild("advanced", "");
+$newAlum->addChild("title", " ");
+$newAlum->addChild("phone", " ");
+$newAlum->addChild("linkedin", " ");
+$newAlum->addChild("desc", " ");
+$newAlum->addChild("advanced", " ");
 //ASSERT: User's job title, phone number, linked in url,
 //        job description, room for advanced degree
 
 
-$newAlum->addChild('gradMon', "");
-$newAlum->addChild('gradYear', "");
+$newAlum->addChild('gradMon', " ");
+$newAlum->addChild('gradYear', " ");
 //ASSERT: fill the rest of the database with empty
 
 
