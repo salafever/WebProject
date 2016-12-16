@@ -24,6 +24,7 @@ foreach($xml->alum as $aUser){
     if($aUser->name == "Administrator"){
         $adminEmail = $aUser->email;
         $adminPassword = $aUser->password;
+        $adminCookie = $aUser->usercookie;
     }
 }
 
@@ -48,6 +49,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
             while($duplicate == true){
                 $new_cookie = random_int(1, 10000);
                 if(!checkDuplicate($new_cookie)){
+                    //there's no duplicate id within the database
                     setcookie('usercookie', $new_cookie, false);
                     $xml->alum[$i]->usercookie = $_COOKIE['usercookie'];
                     $status = 0;
@@ -64,6 +66,7 @@ for($i = 0; $i < $xml->count() and !$done; $i++){
     else{
         //ASSERT: the user is the administrator
         if($inputLogin == $adminEmail && password_verify($inputPass, $xml->alum[$i]->password)){
+            setcookie('usercookie', $adminCookie, false);
             $status = 1;
             $done = true;
         }
