@@ -1,6 +1,8 @@
 // The Map Functionality
 
-
+// PRE: takes the latitude, longitude, city, state, job title, name, and nameID
+//       of one given entry/person.
+// POST: creates a single marker to put onto the map.
 var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
 			    aName, nameID, map) {
 
@@ -38,9 +40,10 @@ var createMarker = function(aLatitude, aLongitude,  aCity, aState, jobTitle,
 }
 
 
-// PRE: takes the latitude, longitude, city, state, job title, name, and nameID
-//       of one given entry/person.
-// POST: creates the map with all of the markers on the map created. 
+// PRE: This is called when the user is logged and can see the map with the
+//       markers.
+// POST: creates the map with all of the markers on the map created and returns
+//        the map. 
 var myMap = function() {
 
     var mapOptions = {
@@ -65,30 +68,8 @@ var myMap = function() {
     //ASSERT: create a map object
 
     return (map);
-    
-    // =======================================================
-    
-    
-    //Use Javascript to make an AJAX call to PHP asking for the
-    //cities and states of everyone in the database
-
-    //PHP will gather the information, put them into an array of objects
-    //use json_encode on this
-
-    //Echo this/somehow send it back to Javascript
-
-    //Do the whole Javascript JSON parse thing
-
-    //Convert to latitude and longitude
-    //Place marker on the map.
-    
-    //Use a for loop, using the function createMarker function
-    
-    // To add the marker to the map, call setMap();
-
-    
+        
 }
-
 
 
 $(document).ready(function(){   
@@ -96,27 +77,21 @@ $(document).ready(function(){
 	url: 'getMapInfo.php',
 	type: 'POST',
 	success: function(response){
-
-	    var everyone = JSON.parse(response);
-	    console.log(everyone);
-
-	    console.log(everyone[0]['name']);
-
-	    map = myMap();
 	    
+	    var everyone = JSON.parse(response);
+	    // console.log(everyone);
+	    // console.log(everyone[0]['name']);
+
+	    map = myMap();	    
 	    for(var i = 0; i < everyone.length; i++){
 		createMarker(everyone[i]['latitude'], everyone[i]['longitude'],
 			     everyone[i]['city'], everyone[i]['state'],
 			     everyone[i]['title'], everyone[i]['name'],
 		      everyone[i]['id'], map);
 	    }
-
-
 	}
 	//ASSERT: http request is made sending over
 	//        the user information
     });
     
-
-
 });
