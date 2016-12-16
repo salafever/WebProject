@@ -81,7 +81,7 @@ $(document).ready(function(){
 
     
 
-    $("#submitButt").click(function(){
+    $("#updateAccSett").click(function(){
 	//ASSERT: the account update button has been clicked
 	
 	var name = document.getElementById("name").value;
