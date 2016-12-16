@@ -31,24 +31,26 @@ $(document).ready(function(){
 	    data: {'login': userString},
 	    type: 'POST',
 	    success: function(response){
+		console.log(response);
+
 		//ASSERT: we got a successful response that we store
 		namespace.response = response;
 	    }
 	});
 
-	if(namespace.response == namespace.success){
-	    //ASSERT: the user was verified
-	    window.location.href = 'loggedIn.html';
-	}
-	else if(namespace.response == namespace.successAdmin){
-	    //ASSERT: the user was verified as an administrator
-	    window.location.href = 'adminPage.html';
-	}
-	else if(namespace.response == namespace.failure){
-	    //ASSERT: the user was unverified
-	    window.location.href = 'mainPage.html';
-	    console.log("Invalid");
-	}
+	// if(namespace.response == namespace.success){
+	//     //ASSERT: the user was verified
+	//     window.location.href = 'loggedIn.html';
+	// }
+	// else if(namespace.response == namespace.successAdmin){
+	//     //ASSERT: the user was verified as an administrator
+	//     window.location.href = 'adminPage.html';
+	// }
+	// else if(namespace.response == namespace.failure){
+	//     //ASSERT: the user was unverified
+	//     window.location.href = 'mainPage.html';
+	//     console.log("Invalid");
+	// }
 
   
 
